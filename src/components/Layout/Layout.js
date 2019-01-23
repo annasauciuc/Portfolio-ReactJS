@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 
-import Navigation from "./../Header/Header";
-import Header from "./../Navigation/Navigation";
+import Header from "./Header/Header";
+import Navigation from "./Header/Navigation/Navigation";
+
+import Presentation from "./../Presentacion/Presentation";
 
 class Layout extends Component {
   render() {
@@ -10,6 +12,7 @@ class Layout extends Component {
         <Navigation />
 
         <Header />
+        <Presentation/>
       </div>
     );
   }
