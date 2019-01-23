@@ -3,20 +3,20 @@ import SectionTitle from "../SectionTitle/SectionTitle";
 
 const Presentation = () => (
   <div>
-    <section class="mt-5 aboutMe autoWidth " id="aboutMe">
+    <section className="mt-5 aboutMe autoWidth " id="aboutMe">
       <SectionTitle
         text="About Me"
         title="h2"
         styleClass="font mb-1 text-dark mt-5 mb-1"
       />
-      <hr class="underlined" />
+      <hr className="underlined" />
       <div>
-        <p class="mb-5 text-justify" id="aboutSectionText">
+        <p className="mb-5 text-justify" id="aboutSectionText">
           {" "}
           I'm a self-taught Web Developer! Starting this wonderful journey with
           big aspiration, with endless dreams and a lot a hope. My journey
           started in the
-          <a href="https://20h.es/" target="_blank" class="hoverLine">
+          <a href="https://20h.es/" target="_blank" className="hoverLine">
             <strong>
               <u>20h Talent Bootcamp</u>
             </strong>

@@ -34,18 +34,16 @@ class Navigation extends Component {
         >
           <NavbarBrand href="/">
             {" "}
-            <a className="text-light mr-auto">
-              <img
-                src="./../../assets/images/projects/favicon.png"
-                style={{ width: "80px" }}
-                alt="favicon am"
-              />
-            </a>
+            <img
+              src="./../../assets/images/projects/favicon.png"
+              style={{ width: "80px" }}
+              alt="favicon am"
+            />
           </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav navbar>
-            <NavItem>
+              <NavItem>
                 <NavLink href="https://github.com/reactstrap/reactstrap">
                   PROJECTS
                 </NavLink>
@@ -63,32 +61,18 @@ class Navigation extends Component {
               <NavItem>
                 <NavLink href="/components/">
                   {" "}
-                  <a
-                    title="Spanish"
-                    className="nav-link text-white"
-                    id="spain"
-                    href="#"
-                  >
-                    <img
-                      src="./../../assets/images/spain-flag-icon-32.png"
-                      alt="spain flag"
-                    />
-                  </a>
+                  <img
+                    src="./../../assets/images/spain-flag-icon-32.png"
+                    alt="spain flag"
+                  />
                 </NavLink>
               </NavItem>
-              <NavItem >
+              <NavItem>
                 <NavLink href="/components/">
-                  <a
-                    title="English"
-                    className="nav-link text-white"
-                    id="england"
-                    href="#"
-                  >
-                    <img
-                      src="./../../assets/images/projects/spain-flag-icon-64.png"
-                      alt="england flag"
-                    />
-                  </a>
+                  <img
+                    src="./../../assets/images/projects/spain-flag-icon-64.png"
+                    alt="england flag"
+                  />
                 </NavLink>
               </NavItem>
             </div>
