@@ -1,0 +1,41 @@
+.jumbo {
+    background: url("/src/assets/images/projects/header_img.jpeg") no-repeat top center;
+    position: relative;
+    background-size: cover;
+    color: rgb(41, 39, 39);
+    overflow: hidden;
+    height: 99.983127vh;
+    width: 100%;
+    /* background-color: rgba(0, 0, 0, 0.51); */
+    z-index: -1;
+}
+
+.presentation {
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0px;
+    right: 0;
+    /* transform: translate(-50%, -50%); */
+}
+
+.headerTitleOverlay {
+    height: 190px;
+    position: absolute;
+    margin-top: -40px;
+    font-size: 4.625rem;
+    bottom: 19%;
+    left: 7%;
+    right: 3%;
+    /* transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%); */
+}
+
+@media screen and (max-width:425px) {
+    .headerTitleOverlay {
+        height: 50px;
+        width: 100%;
+        font-size: 3.5rem!important;
+    }
+}
