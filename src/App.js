@@ -1,11 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import Layout from "./components/Layout/Layout";
-import { library } from "@fortawesome/fontawesome-svg-core";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faIgloo } from "@fortawesome/free-solid-svg-icons";
 
-library.add(faIgloo);
 
 class App extends Component {
   renderH1 = () => {
@@ -14,7 +10,7 @@ class App extends Component {
   renderH2 = () => {
     const { text, classStyles } = this.props;
     return (
-      <h2 className={classStyles} id="" data-aos="fade-right">
+      <h2 className={classStyles} id="" data-aos="fade-right">      
         {text}
       </h2>
     );

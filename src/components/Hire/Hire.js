@@ -3,8 +3,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./Hire.css";
 import {
   Card,
-  Button,
-  CardImg,
   CardTitle,
   CardText,
   CardDeck,
