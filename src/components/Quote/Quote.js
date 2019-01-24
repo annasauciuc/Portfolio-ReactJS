@@ -22,8 +22,8 @@ class Quote extends Component {
   };
   render() {
     return (
-      <section class="quoteSection col">
-        <div class="container">
+      <section className="quoteSection col">
+        <div className="container">
           <div className="col presentation">
             <blockquote
               className="ml-3 mr-3 text-center quote"
