@@ -5,7 +5,10 @@ import Navigation from "./Header/Navigation/Navigation";
 import HobbieList from "./../HobbiesList/HobbiesList";
 import Presentation from "./../Presentacion/Presentation";
 import Quote from "./Footer/Quote/Quote";
-import HireCards from './../HireCards/HireCards'
+import HireCards from "./../HireCards/HireCards";
+import Contact from "../Contact/Contact";
+import Footer from "./Footer/Footer";
+
 
 class Layout extends Component {
   render() {
@@ -15,10 +18,13 @@ class Layout extends Component {
         <Header />
         <Presentation />
         <HobbieList />
-        <Quote    text="Programming isn’t something you do from 9 to 17. It’s not a job, it’s a way of life. "
-        title=" - A smart guy -"
-      />{" "}
-      <HireCards/>
+        <Quote
+          text="Programming isn’t something you do from 9 to 17. It’s not a job, it’s a way of life. "
+          title=" - A smart guy -"
+        />{" "}
+        <HireCards />
+        <Contact />{" "}
+        <Footer/>
       </div>
     );
   }

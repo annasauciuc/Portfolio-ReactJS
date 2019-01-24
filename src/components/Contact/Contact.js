@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import SectionTitle from './../SectionTitle/SectionTitle'
-
+import './Contact.css'
 class Contact extends Component {
   constructor(props) {
     super(props);
@@ -23,7 +23,7 @@ class Contact extends Component {
   };
   render() {
     return (
-        <section className="contactSection text-center p-2 presentation" id="contact" data-aos="fade-down">
+        <section className="contactSection text-center p-2" id="contact" data-aos="fade-down">
        <SectionTitle
         text="Contact"
         title="h2"
