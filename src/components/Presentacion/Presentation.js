@@ -7,7 +7,7 @@ const Presentation = () => (
       <SectionTitle
         text="About Me"
         title="h2"
-        styleClass="font mb-1 text-dark mt-5 mb-1"
+        classStyles="font mb-1 text-dark mt-5 mb-1"
       />
       <hr className="underlined" />
       <div>

@@ -11,7 +11,7 @@ const HobbieList = () => {
       <SectionTitle
         text="Hobbies and Interests"
         title="h2"
-        styleClass="autoWidth text-light"
+        classStyles="autoWidth text-light"
       />
       <hr className="underlined" />
       <div className="container">

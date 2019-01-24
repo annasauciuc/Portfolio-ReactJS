@@ -160,15 +160,6 @@ img {
     min-height: 350px;
 }
 
-.typed-cursor {
-    position: relative;
-    top: -6px;
-    opacity: 1;
-    -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
-    animation: blink 0.7s infinite;
-}
-
 #presentationText {
     -webkit-animation: 3s ease-in 0s normal forwards 1 fadein;
     animation: 3s ease-in 0s normal forwards 1 fadein;
