@@ -1,29 +1,26 @@
 import React, { Component } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import "./App.css";
 import Layout from "./components/Layout/Layout";
 
 
 class App extends Component {
-  renderH1 = () => {
-    return <h1 />;
-  };
-  renderH2 = () => {
-    const { text, classStyles } = this.props;
-    return (
-      <h2 className={classStyles} id="" data-aos="fade-right">      
-        {text}
-      </h2>
-    );
-  };
-
-  renderTitle = () => {
-    const { title } = this.props;
-    if (title == "h1") {
-      return this.renderH1();
-    } else if (title == "h2") {
-      return this.renderH2();
-    }
-  };
+  constructor(props){
+    super(props);
+  }
+  componentDidMount(){
+    AOS.init({
+      duration : 1200
+    })
+  }
+  render(){
+    return(
+      <div data-aos='fade-up'>
+        Helloooo!
+      </div>
+    )
+  }
 
   render() {
     return (

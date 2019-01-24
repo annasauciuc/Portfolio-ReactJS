@@ -15,3 +15,20 @@
 .contactSection img {
     width: 200px;
 }
+
+.social {
+    width: 3.2rem;
+    height: 3.2rem;
+    border: 0.1rem solid #ffffff;
+    border-radius: 100%;
+    font-size: 1.4rem;
+    line-height: 3.2rem;
+    transition: 0.2s background linear, 0.2s color linear;
+}
+
+.social:hover {
+    background-color: #727070;
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}

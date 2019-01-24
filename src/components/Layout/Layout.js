@@ -4,9 +4,9 @@ import Header from "./Header/Header";
 import Navigation from "./Header/Navigation/Navigation";
 import HobbieList from "./../HobbiesList/HobbiesList";
 import Presentation from "./../Presentacion/Presentation";
-import Quote from "./Footer/Quote/Quote";
+import Quote from "./../Quote/Quote";
 import HireCards from "./../HireCards/HireCards";
-import Contact from "../Contact/Contact";
+import Contact from "./../Contact/Contact";
 import Footer from "./Footer/Footer";
 
 

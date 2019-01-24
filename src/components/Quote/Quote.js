@@ -10,9 +10,9 @@ class Quote extends Component {
   renderQuote = () => {
     const { text, classStyles } = this.props;
     return (
-      <h2 className={classStyles}>
+      <div className={classStyles}>
         <em>{text}</em>
-      </h2>
+      </div>
     );
   };
 
