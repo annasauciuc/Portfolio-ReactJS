@@ -30,8 +30,8 @@ class Contact extends Component {
         styleClass="text-center font mb-5 text-light"
       />
             <div className="col-lg-12 d-inline-block text-center text-white mb-4" data-aos="fade-right">
-                <span className="h4 text-center font mb-5 text-light" id="contactText">If  you want to   contact with  me</span>
-                <a href="mailto:hi@amsauciuc.com" target="_blank" className="text-white h4 hoverLine"><u>hi@amsauciuc.com</u></a>
+                <span className="h4 text-center font mb-5 text-light" id="contactText">If  you want to   contact with  me </span>
+                <a href="mailto:hi@amsauciuc.com" target="_blank" className="text-white h4 hoverLine"><u> hi@amsauciuc.com</u></a>
             </div>
             <div className="mb-2 col-lg-12">
                 <a href="https://twitter.com/@amsauciuc" target="_blank"><i className="fab social fa-2x icon-twitter fa-twitter"></i></a>

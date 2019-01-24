@@ -28,15 +28,13 @@ class Layout extends Component {
             title="h2"
             classStyles="mt-5 h1 text-center p-5"
           />
-          <div className="col-lg-12 d-inline-flex mt-5 col-xl-12 col-md-12 col-xs-12">
-   
-              <HireCards />
-            
-          
+
+          <div class="col-lg-12 d-inline-flex mt-5 col-xl-12 col-md-12 col-xs-12">
+            <HireCards />
           </div>
         </section>
         <Contact />
-            <Footer />
+        <Footer />
       </div>
     );
   }

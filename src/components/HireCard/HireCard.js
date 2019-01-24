@@ -11,7 +11,7 @@ const HireCard = props => {
   const { className, text, title } = props;
   console.log('Card :', Card);
   return (
-   
+  
       <Card>
       <i className={className}></i>
           <CardBody>
@@ -22,7 +22,7 @@ const HireCard = props => {
             </CardText>
           </CardBody>
         </Card>
-   
+      
   );
 };
 
