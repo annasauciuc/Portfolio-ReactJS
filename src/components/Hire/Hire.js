@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "./Hire.css";
 import {
   Card,
   Button,
@@ -15,67 +17,43 @@ const Hire = props => {
     <div>
       <CardDeck>
         <Card>
-          <CardImg
-            top
-            width="100%"
-            src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180"
-            alt="Card image cap"
-          />
+          <FontAwesomeIcon icon="igloo" />
           <CardBody>
-            <CardTitle>Card title</CardTitle>
-            <CardSubtitle>Card subtitle</CardSubtitle>
+            <CardTitle>Hard Worker</CardTitle>
+
             <CardText>
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit
-              longer.
+              The ability to collaborate with clients and peers is crucial for
+              web development. Respecting the others ideas and space also.
+              Nothing is more rewarding when hard work pays off. Always trying
+              to learn new things or reinforcing what i know.
             </CardText>
-            <Button>Button</Button>
           </CardBody>
         </Card>
         <Card>
-          <CardImg
-            top
-            width="100%"
-            src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180"
-            alt="Card image cap"
-          />
+          <FontAwesomeIcon icon="igloo" />
           <CardBody>
-            <CardTitle>Card title</CardTitle>
-            <CardSubtitle>Card subtitle</CardSubtitle>
+            <CardTitle>Passionate</CardTitle>
             <CardText>
               This card has supporting text below as a natural lead-in to
               additional content.
             </CardText>
-            <Button>Button</Button>
           </CardBody>
         </Card>
         <Card>
-          <CardImg
-            top
-            width="100%"
-            src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180"
-            alt="Card image cap"
-          />
+          <FontAwesomeIcon icon="igloo" />
           <CardBody>
             <CardTitle>Card title</CardTitle>
-            <CardSubtitle>Card subtitle</CardSubtitle>
             <CardText>
               This is a wider card with supporting text below as a natural
               lead-in to additional content. This card has even longer content
               than the first to show that equal height action.
             </CardText>
-            <Button>Button</Button>
           </CardBody>
         </Card>
       </CardDeck>
       <CardDeck>
         <Card>
-          <CardImg
-            top
-            width="100%"
-            src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180"
-            alt="Card image cap"
-          />
+          <FontAwesomeIcon icon="igloo" />
           <CardBody>
             <CardTitle>Card title</CardTitle>
             <CardSubtitle>Card subtitle</CardSubtitle>
@@ -84,42 +62,29 @@ const Hire = props => {
               lead-in to additional content. This content is a little bit
               longer.
             </CardText>
-            <Button>Button</Button>
           </CardBody>
         </Card>
         <Card>
-          <CardImg
-            top
-            width="100%"
-            src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180"
-            alt="Card image cap"
-          />
+          <FontAwesomeIcon icon="igloo" />
           <CardBody>
             <CardTitle>Card title</CardTitle>
-            <CardSubtitle>Card subtitle</CardSubtitle>
+
             <CardText>
               This card has supporting text below as a natural lead-in to
               additional content.
             </CardText>
-            <Button>Button</Button>
           </CardBody>
         </Card>
         <Card>
-          <CardImg
-            top
-            width="100%"
-            src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180"
-            alt="Card image cap"
-          />
+          <FontAwesomeIcon icon="igloo" />
           <CardBody>
             <CardTitle>Card title</CardTitle>
-            <CardSubtitle>Card subtitle</CardSubtitle>
+
             <CardText>
               This is a wider card with supporting text below as a natural
               lead-in to additional content. This card has even longer content
               than the first to show that equal height action.
             </CardText>
-            <Button>Button</Button>
           </CardBody>
         </Card>
       </CardDeck>
