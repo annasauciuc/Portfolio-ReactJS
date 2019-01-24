@@ -1,5 +1,5 @@
 .jumbo {
-    background: url("/src/assets/images/projects/header_img.jpeg") no-repeat top center;
+    background: url("./images/personalImg.jpg") no-repeat top center;
     position: relative;
     background-size: cover;
     color: rgb(41, 39, 39);

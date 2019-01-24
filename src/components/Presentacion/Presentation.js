@@ -2,7 +2,7 @@ import React from "react";
 import SectionTitle from "./../SectionTitle/SectionTitle";
 
 const Presentation = () => (
-  <div>
+  <div data-aos="fade-down">
     <section className="mt-5 aboutMe autoWidth " id="aboutMe">
       <SectionTitle
         text="About Me"

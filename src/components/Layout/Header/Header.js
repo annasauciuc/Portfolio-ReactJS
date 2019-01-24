@@ -1,4 +1,5 @@
 import React from "react";
+import MyComponent from './../../Typed/MyComponent'
 import "./Header.css";
 const Header = () => {
   return (
@@ -6,6 +7,7 @@ const Header = () => {
       <div className="presentation">
         <div className="headerTitleOverlay text-left">
           <span className="text-light" id="typed" />
+          <MyComponent/>
           <p
             className="h1 text-light d-none d-sm-block d-lg-block d-xl-block"
             id="presentationText"
