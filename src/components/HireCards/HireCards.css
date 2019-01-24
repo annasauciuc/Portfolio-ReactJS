@@ -1,0 +1,13 @@
+.hireSection i {
+    text-align: center;
+    font-size: 2rem;
+    padding: 5px;
+}
+
+.card {
+    border: none;
+}
+
+.card p {
+    font-size: 1.31429rem;
+}

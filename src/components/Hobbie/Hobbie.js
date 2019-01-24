@@ -12,7 +12,7 @@ class Hobbie extends Component {
     console.log(this.props);
     return (
       <p>
-        <i className={styleClass}></i>
+        <i className={styleClass} />
         <br />
         <span>{text}</span>
       </p>
