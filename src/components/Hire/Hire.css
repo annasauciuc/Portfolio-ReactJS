@@ -1,9 +1,13 @@
-.hireSection svg {
+.hireSection span {
     text-align: center!important;
-    font-size: 6rem;
+    font-size: 2rem;
     padding: 5px;
 }
 
-.svg-inline--fa.fa-w-18 {
-    width: -1.875em;
+.card {
+    border: none!important;
+}
+
+.card p {
+    font-size: 1.31429rem;
 }

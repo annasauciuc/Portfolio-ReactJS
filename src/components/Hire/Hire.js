@@ -1,4 +1,5 @@
 import React from "react";
+import FontAwesome from "react-fontawesome";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./Hire.css";
 import {
@@ -15,7 +16,7 @@ const Hire = props => {
     <div>
       <CardDeck>
         <Card>
-          <FontAwesomeIcon icon="igloo" />
+          <FontAwesome  className="text-center" name="briefcase" />
           <CardBody>
             <CardTitle>Hard Worker</CardTitle>
 
@@ -28,7 +29,7 @@ const Hire = props => {
           </CardBody>
         </Card>
         <Card>
-          <FontAwesomeIcon icon="igloo" />
+          <FontAwesome name="heart" className="text-center"  />
           <CardBody>
             <CardTitle>Passionate</CardTitle>
             <CardText>
@@ -38,7 +39,7 @@ const Hire = props => {
           </CardBody>
         </Card>
         <Card>
-          <FontAwesomeIcon icon="igloo" />
+          <FontAwesome  className="text-center" name="forward" />
           <CardBody>
             <CardTitle>Card title</CardTitle>
             <CardText>
@@ -51,7 +52,7 @@ const Hire = props => {
       </CardDeck>
       <CardDeck>
         <Card>
-          <FontAwesomeIcon icon="igloo" />
+          <FontAwesome  className="text-center" name="lightbulb" />
           <CardBody>
             <CardTitle>Card title</CardTitle>
             <CardSubtitle>Card subtitle</CardSubtitle>
@@ -63,7 +64,7 @@ const Hire = props => {
           </CardBody>
         </Card>
         <Card>
-          <FontAwesomeIcon icon="igloo" />
+          <FontAwesome  className="text-center" name="clock" />
           <CardBody>
             <CardTitle>Card title</CardTitle>
 
@@ -74,7 +75,7 @@ const Hire = props => {
           </CardBody>
         </Card>
         <Card>
-          <FontAwesomeIcon icon="igloo" />
+          <FontAwesome  className="text-center" name="users" />
           <CardBody>
             <CardTitle>Card title</CardTitle>
 
