@@ -5,7 +5,7 @@ import Navigation from "./../Navigation/Navigation";
 import HobbieList from "./../HobbiesList/HobbiesList";
 import Presentation from "./../Presentacion/Presentation";
 import Quote from "./../Quote/Quote";
-import HireCards from "./../HireCards/HireCards";
+import HireCardsList from "./../HireCardsList/HireCardsList";
 import Contact from "./../Contact/Contact";
 import Footer from "./Footer/Footer";
 
@@ -22,6 +22,7 @@ class Layout extends Component {
           <div className="container">
             <div className="col presentation">
               <Quote
+                styleClass="h2 ml-3 mr-3 text-center quote"
                 text="Programming isn’t something you do from 9 to 17. It’s not a job, it’s a way of life. "
                 title=" - A smart guy -"
               />{" "}
@@ -35,8 +36,8 @@ class Layout extends Component {
             classStyles="mt-5 h1 text-center p-5"
           />
 
-          <div class="col-lg-12 d-inline-flex mt-5 col-xl-12 col-md-12 col-xs-12">
-            <HireCards />
+          <div className="col-lg-12 d-inline-flex mt-5 col-xl-12 col-md-12 col-xs-12">
+            <HireCardsList />
           </div>
         </section>
         <Contact />

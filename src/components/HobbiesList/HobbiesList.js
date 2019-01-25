@@ -10,7 +10,6 @@ const HobbieList = () => {
       <hr className="underlined" />
       <SectionTitle
         text="Hobbies and Interests"
-        title="h2"
         classStyles="autoWidth text-light"
       />
       <hr className="underlined" />

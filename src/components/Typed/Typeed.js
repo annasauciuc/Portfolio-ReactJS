@@ -3,7 +3,7 @@ import React,{ Component } from 'react';
 
 import Typed from 'react-typed';
  
-class MyComponent extends Component {
+class Typeed extends Component {
     render() {
         return (
             <div>
@@ -22,4 +22,4 @@ class MyComponent extends Component {
     }
 }
 
-    export default MyComponent;
+    export default Typeed;

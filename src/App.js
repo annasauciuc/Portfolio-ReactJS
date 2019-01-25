@@ -3,8 +3,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import "./App.css";
 import Layout from "./components/Layout/Layout";
-import { CardDeck } from "reactstrap";
-import HireCards from "./components/HireCards/HireCards";
+
+
 class App extends Component {
   constructor() {
     super();

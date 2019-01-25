@@ -52,7 +52,7 @@ class Navigation extends Component {
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/components/">ABOUT</NavLink>
+                <NavLink href="">ABOUT</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="https://github.com/reactstrap/reactstrap">
