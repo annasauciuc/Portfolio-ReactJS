@@ -8,6 +8,9 @@ import {
   NavItem,
   NavLink
 } from "reactstrap";
+import favicon from './images/favicon.png'
+import spainFlag from './images/spain-flag-icon-32.png'
+import englandFlag from './images/united-kingdom-flag-icon-32.png'
 
 class Navigation extends Component {
   constructor(props) {
@@ -35,7 +38,7 @@ class Navigation extends Component {
           <NavbarBrand href="/">
             {" "}
             <img
-              src="./../../assets/images/projects/favicon.png"
+              src={favicon}
               style={{ width: "80px" }}
               alt="favicon am"
             />
@@ -62,7 +65,7 @@ class Navigation extends Component {
                 <NavLink href="/components/">
                   {" "}
                   <img
-                    src="./../../assets/images/spain-flag-icon-32.png"
+                    src={spainFlag}
                     alt="spain flag"
                   />
                 </NavLink>
@@ -70,7 +73,7 @@ class Navigation extends Component {
               <NavItem>
                 <NavLink href="/components/">
                   <img
-                    src="./../../assets/images/projects/spain-flag-icon-64.png"
+                    src={englandFlag}
                     alt="england flag"
                   />
                 </NavLink>
