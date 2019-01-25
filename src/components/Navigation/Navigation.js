@@ -1,86 +1,100 @@
 import React, { Component } from "react";
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink
-} from "reactstrap";
-import favicon from './images/favicon.png'
-import spainFlag from './images/spain-flag-icon-32.png'
-import englandFlag from './images/united-kingdom-flag-icon-32.png'
+
+import favicon from "./images/favicon.png";
+import spainFlag from "./images/spain-flag-icon-32.png";
+import englandFlag from "./images/united-kingdom-flag-icon-32.png";
 
 class Navigation extends Component {
   constructor(props) {
     super(props);
 
-    this.toggle = this.toggle.bind(this);
     this.state = {
-      isOpen: false
+      navCollapsed: true
     };
   }
-  toggle() {
+  onToggleNav = () => {
     this.setState({
-      isOpen: !this.state.isOpen
+      navCollapsed: !this.state.navCollapsed
     });
-  }
+  };
+
   render() {
+    const { navCollapsed } = this.state;
     return (
       <div>
-        <Navbar
-          color="dark"
-          light
-          expand="md"
-          className="fixed-top navbar-dark"
-        >
-          <NavbarBrand href="/">
+        <nav className="navbar fixed-top  navbar-expand-lg navbar-dark">
+          <a className="text-light mr-auto" href="#">
             {" "}
-            <img
-              src={favicon}
-              style={{ width: "80px" }}
-              alt="favicon am"
-            />
-          </NavbarBrand>
-          <NavbarToggler onClick={this.toggle} />
-          <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav navbar>
-              <NavItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap">
-                  PROJECTS
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="">ABOUT</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap">
-                  CONTACT
-                </NavLink>
-              </NavItem>
-            </Nav>
-            <div className="ml-auto navbar-nav">
-              <NavItem>
-                <NavLink href="/components/">
-                  {" "}
-                  <img
-                    src={spainFlag}
-                    alt="spain flag"
-                  />
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="/components/">
-                  <img
-                    src={englandFlag}
-                    alt="england flag"
-                  />
-                </NavLink>
-              </NavItem>
+            <img src={favicon} style={{ width: "80px" }} alt="favicon am" />
+          </a>
+          <div
+            onClick={this.onToggleNav}
+            className="navbar-toggler"
+            role="button"
+            aria-controls="navbarToggler"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <div className="nav__spans">
+              <span className="nav_span--1" />
+              <span className="nav_span--2" />
+              <span className="nav_span--3" />
+              <span className="nav_span--4" />
             </div>
-          </Collapse>
-        </Navbar>
+          </div>
+          <div
+            className={(navCollapsed ? "collapse" : "") + " navbar-collapse"}
+          >
+            <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li className="nav-item">
+                <a
+                  className="nav-link hoverLine"
+                  id="menuMyProjects"
+                  href="html/projects.html"
+                >
+                  PROJECTS<span className="sr-only">(current)</span>
+                </a>
+              </li>
+              <li className="nav-item">
+                <a
+                  className="nav-link hoverLine"
+                  id="menuAbout"
+                  href="#aboutMe"
+                >
+                  ABOUT
+                </a>
+              </li>
+              <li className="nav-item">
+                <a
+                  className="nav-link hoverLine"
+                  id="menuContact"
+                  href="#contact"
+                >
+                  CONTACT
+                </a>
+              </li>
+            </ul>
+            <div className="form-inline my-2 my-lg-0">
+              <a
+                title="Spanish"
+                className="nav-link text-white"
+                id="spain"
+                href="#"
+              >
+                <img src={spainFlag} alt="spain flag" />
+              </a>
+
+              <a
+                title="English"
+                className="nav-link text-white"
+                id="england"
+                href="#"
+              >
+                <img src={englandFlag} alt="england flag" />
+              </a>
+            </div>
+          </div>
+        </nav>
       </div>
     );
   }

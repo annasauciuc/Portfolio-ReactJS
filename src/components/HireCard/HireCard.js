@@ -9,13 +9,13 @@ const HireCard = props => {
       <i className={className} />
       <div className="card-body">
         <h4
-          class="card-title font-weight-bold text-center "
+          className="card-title font-weight-bold text-center "
           data-aos="fade-right"
         >
           {title}
         </h4>
 
-        <p class="text-justify ">{text}</p>
+        <p className="text-justify ">{text}</p>
       </div>
     </div>
   );
