@@ -1,26 +1,16 @@
 import React, { Component } from "react";
 
-class Hobbie extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {};
-  }
-
-  renderHobbieTitle = () => {
-    const { text, styleClass } = this.props;
-    console.log(this.props);
-    return (
+const Hobbie = (props) => {
+  return (
+    <div data-aos="fade-right">
+      {" "}
       <p>
-        <i className={styleClass} />
+        <i className={props.styleClass} />
         <br />
-        <span>{text}</span>
+        <span>{props.text}</span>
       </p>
-    );
-  };
-  render() {
-    return <div data-aos="fade-right">{this.renderHobbieTitle()}</div>;
-  }
-}
+    </div>
+  );
+};
 
 export default Hobbie;
