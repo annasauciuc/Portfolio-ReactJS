@@ -18,10 +18,16 @@ class Layout extends Component {
         <Header />
         <Presentation />
         <HobbieList />
-        <Quote
-          text="Programming isn’t something you do from 9 to 17. It’s not a job, it’s a way of life. "
-          title=" - A smart guy -"
-        />{" "}
+        <section className="quoteSection col">
+          <div className="container">
+            <div className="col presentation">
+              <Quote
+                text="Programming isn’t something you do from 9 to 17. It’s not a job, it’s a way of life. "
+                title=" - A smart guy -"
+              />{" "}
+            </div>
+          </div>
+        </section>{" "}
         <section className="hireSection">
           <SectionTitle
             text=" Why would you want me in your team ?"
