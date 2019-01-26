@@ -8,8 +8,8 @@ class Typeed extends Component {
         return (
             <div>
                 <Typed 
-                    strings={["Hi ! ",
-                "Hi ! <br>I'm <strong>Ana Maria</strong> "]} 
+                    strings={["<span class='text-white'>Hi !</span> ",
+                "<span class='text-white'>Hi ! <br>I'm</span> <strong>Ana Maria</strong> "]} 
                     typeSpeed={40} 
                     backDelay={900} 
                 />

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import './Navigation.css'
 import favicon from "./images/favicon.png";
 import spainFlag from "./images/spain-flag-icon-32.png";
 import englandFlag from "./images/united-kingdom-flag-icon-32.png";

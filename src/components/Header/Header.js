@@ -1,5 +1,5 @@
 import React from "react";
-import Typeed from '../../Typed/Typeed'
+import Typeed from './../Typed/Typeed'
 import "./Header.css";
 const Header = () => {
   return (

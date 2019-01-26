@@ -32,3 +32,15 @@
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
 }
+
+.icon-twitter {
+    color: #099af5;
+}
+
+.icon-github {
+    color: rgb(0, 0, 0);
+}
+
+.icon-linkedin {
+    color: rgb(0, 119, 181);
+}

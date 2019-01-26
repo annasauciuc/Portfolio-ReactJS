@@ -63,3 +63,8 @@
 .photo-overlay:hover {
     opacity: 1;
 }
+
+#presentationText {
+    -webkit-animation: 3s ease-in 0s normal forwards 1 fadein;
+    animation: 3s ease-in 0s normal forwards 1 fadein;
+}
