@@ -3,6 +3,7 @@ import React from "react";
 import HireCard from "../HireCard/HireCard";
 import "./HireCardsList.css";
 import {getHireCards} from './../../services/hire'
+import {getText} from './../../services/translation'
 
 const HireCardsList = () => {
 

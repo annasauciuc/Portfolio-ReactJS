@@ -1,7 +1,7 @@
 import React from "react";
 import Hobbie from "./../Hobbie/Hobbie";
 import "./HobbiesList.css";
-
+import {getText} from './../../services/translation'
 import SectionTitle from "./../SectionTitle/SectionTitle";
 
 const HobbieList = () => {
