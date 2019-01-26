@@ -13,7 +13,7 @@ class Presentation extends Component {
       <div data-aos="fade-down">
         <section className="mt-5 aboutMe autoWidth " id="aboutMe">
           <SectionTitle
-            text="About Me"
+            text={getText("SECTION_ABOUT_ME_TITLE", languageSelected)}
             title="h2"
             classStyles="font mb-1 text-dark mt-5 mb-1"
           />

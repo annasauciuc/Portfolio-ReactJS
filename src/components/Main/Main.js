@@ -23,7 +23,7 @@ class Main extends Component {
         <section className="quoteSection col">
           <div className=" presentation">
             <Quote
-            languageSelected={languageSelected} 
+           
               styleClass="h2 ml-3 mr-3 text-center quote"
               text= {getText("CODEQUOTE",languageSelected)}
               title= {getText("AUTHOR",languageSelected)}
@@ -32,7 +32,7 @@ class Main extends Component {
         </section>{" "}
         <section className="hireSection">
           <SectionTitle
-           languageSelected={languageSelected} 
+         
             text={getText("HIRETITLE",languageSelected)}
             title="h2"
             classStyles="mt-5 h1 text-center p-5"
