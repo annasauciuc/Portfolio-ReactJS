@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import {getText} from './../../services/translation'
 import SectionTitle from "./../SectionTitle/SectionTitle";
 import "./Contact.css";
 const Contact = props => {
@@ -10,7 +11,7 @@ const Contact = props => {
       data-aos="fade-down"
     >
       <SectionTitle
-        text="Contact"
+        text={getText("CONTACT_TITLE","esp")}
         title="h2"
         styleClass="text-center font mb-5 text-light"
       />
@@ -19,7 +20,7 @@ const Contact = props => {
         data-aos="fade-right"
       >
         <span className="h4 text-center font mb-5 text-light" id="contactText">
-          If you want to contact with me{" "}
+        {getText("CONTACT_TEXT","esp")}{" "}
         </span>
         <a
           href="mailto:hi@amsauciuc.com"

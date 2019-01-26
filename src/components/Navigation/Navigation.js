@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import './Navigation.css'
+import "./Navigation.css";
 import favicon from "./images/favicon.png";
 import spainFlag from "./images/spain-flag-icon-32.png";
 import englandFlag from "./images/united-kingdom-flag-icon-32.png";
@@ -9,7 +9,8 @@ class Navigation extends Component {
     super(props);
 
     this.state = {
-      navCollapsed: true
+      navCollapsed: true,
+      languageSelected: this.props.languageSelected
     };
   }
   onToggleNav = () => {
@@ -17,7 +18,10 @@ class Navigation extends Component {
       navCollapsed: !this.state.navCollapsed
     });
   };
-
+  selectLanguage = (lang) => {
+    const {onChangeLanguage} = this.props;
+    onChangeLanguage(lang);
+  };
   render() {
     const { navCollapsed } = this.state;
     return (
@@ -76,6 +80,9 @@ class Navigation extends Component {
             </ul>
             <div className="form-inline my-2 my-lg-0">
               <a
+                onClick={() => {
+                  this.selectLanguage("esp");
+                }}
                 title="Spanish"
                 className="nav-link text-white"
                 id="spain"
@@ -85,6 +92,9 @@ class Navigation extends Component {
               </a>
 
               <a
+                onClick={() => {
+                  this.selectLanguage("eng");
+                }}
                 title="English"
                 className="nav-link text-white"
                 id="england"

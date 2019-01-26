@@ -9,10 +9,15 @@ import HireCardsList from "./../HireCardsList/HireCardsList";
 import Contact from "./../Contact/Contact";
 
 class Main extends Component {
+  constructor(props) {
+    super(props);
+
+  }
   render() {
+    const {languageSelected} = this.props;
     return (
       <div>
-        <Header />
+        <Header languageSelected={languageSelected} />
         <Presentation />
         <HobbieList />
         <section className="quoteSection col">

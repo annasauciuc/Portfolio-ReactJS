@@ -1,7 +1,16 @@
-import React from "react";
+import React, { Component } from "react";
+
+
 import Typeed from './../Typed/Typeed'
+import {getText} from './../../services/translation'
 import "./Header.css";
-const Header = () => {
+class Header extends Component {
+  constructor(props) {
+    super(props);
+
+  }
+  render(){
+  const {languageSelected} = this.props;
   return (
     <section className="jumbo item" data-aos="fade-down">
       <div className="presentation">
@@ -13,12 +22,13 @@ const Header = () => {
             id="presentationText"
           >
             {" "}
-            I'm here only because i found what i like and i won't let it go!
+           {getText("SUBTITLE",languageSelected)}
           </p>
         </div>
       </div>
     </section>
   );
+}
 };
 
 export default Header;

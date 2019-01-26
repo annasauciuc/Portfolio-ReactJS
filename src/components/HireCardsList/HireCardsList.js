@@ -2,13 +2,13 @@ import React from "react";
 
 import HireCard from "../HireCard/HireCard";
 import "./HireCardsList.css";
-import skillsHire from "../../skillsHire";
+import {getHireCards} from './../../services/hire'
 
 const HireCardsList = () => {
 
   return (
     <div className="row">
-      {skillsHire.map((user, i) => {
+      {getHireCards().map((user, i) => {
         return (
           <HireCard
             key={i}
