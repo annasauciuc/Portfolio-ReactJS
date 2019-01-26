@@ -8,26 +8,21 @@ import Quote from "./../Quote/Quote";
 import HireCardsList from "./../HireCardsList/HireCardsList";
 import Contact from "./../Contact/Contact";
 
-
-
 class Main extends Component {
   render() {
     return (
       <div>
-      
         <Header />
         <Presentation />
         <HobbieList />
         <section className="quoteSection col">
-         
-            <div className=" presentation">
-              <Quote
-                styleClass="h2 ml-3 mr-3 text-center quote"
-                text="Programming isn’t something you do from 9 to 17. It’s not a job, it’s a way of life. "
-                title=" - A smart guy -"
-              />{" "}
-            </div>
-       
+          <div className=" presentation">
+            <Quote
+              styleClass="h2 ml-3 mr-3 text-center quote"
+              text="Programming isn’t something you do from 9 to 17. It’s not a job, it’s a way of life. "
+              title=" - A smart guy -"
+            />{" "}
+          </div>
         </section>{" "}
         <section className="hireSection">
           <SectionTitle
@@ -41,7 +36,6 @@ class Main extends Component {
           </div>
         </section>
         <Contact />
-    
       </div>
     );
   }
