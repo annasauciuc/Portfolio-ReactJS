@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Hobbie from "./../Hobbie/Hobbie";
+import Bubble from "./../Hobbie/Hobbie";
 import "./HobbiesList.css";
 import { getText } from "./../../services/translation";
 import SectionTitle from "./../SectionTitle/SectionTitle";
@@ -21,23 +21,23 @@ class HobbieList extends Component {
         <div className="container">
           <div className="col-lg-12  col-xl-12  col-md-12 col-xs-12">
             <div className="text-center mt-5 bubbles" id="hobbies">
-              <Hobbie text="Sport" styleClass="fas fa-running" />
-              <Hobbie text="Music" styleClass="fa fa-headphones" />
-              <Hobbie text="Travel" styleClass="fas fa-plane-departure" />
-              <Hobbie text="Cook" styleClass="fas fa-utensils" />
-              <Hobbie text="Walk" styleClass="fas fa-hiking" />
-              <Hobbie text="Series" styleClass="fas fa-video" />
-              <Hobbie text="Natur" styleClass="fa fa-tree" />
-              <Hobbie text="Photo" styleClass="fas fa-camera" />
-              <Hobbie text="Family" styleClass="fas fa-home" />
-              <Hobbie text="Read" styleClass="fas fa-book-reader" />
-              <Hobbie text="Animals" styleClass="fas fa-paw" />
-              <Hobbie text="Theater" styleClass="fas fa-theater-masks" />
-              <Hobbie text="Dance" styleClass="fas fa-heart" />
-              <Hobbie text="Code" styleClass="fas fa-code" />
-              <Hobbie text="Eat" styleClass="fas fa-utensils" />
-              <Hobbie text="Not Sleep" styleClass="fas fa-heart" />
-              <Hobbie text="Love" styleClass="fas fa-heart" />
+              <Bubble text="Sport" styleClass="fas fa-running" />
+              <Bubble text="Music" styleClass="fa fa-headphones" />
+              <Bubble text="Travel" styleClass="fas fa-plane-departure" />
+              <Bubble text="Cook" styleClass="fas fa-utensils" />
+              <Bubble text="Walk" styleClass="fas fa-hiking" />
+              <Bubble text="Series" styleClass="fas fa-video" />
+              <Bubble text="Natur" styleClass="fa fa-tree" />
+              <Bubble text="Photo" styleClass="fas fa-camera" />
+              <Bubble text="Family" styleClass="fas fa-home" />
+              <Bubble text="Read" styleClass="fas fa-book-reader" />
+              <Bubble text="Animals" styleClass="fas fa-paw" />
+              <Bubble text="Theater" styleClass="fas fa-theater-masks" />
+              <Bubble text="Dance" styleClass="fas fa-heart" />
+              <Bubble text="Code" styleClass="fas fa-code" />
+              <Bubble text="Eat" styleClass="fas fa-utensils" />
+              <Bubble text="Not Sleep" styleClass="fas fa-heart" />
+              <Bubble text="Love" styleClass="fas fa-heart" />
             </div>
           </div>
         </div>

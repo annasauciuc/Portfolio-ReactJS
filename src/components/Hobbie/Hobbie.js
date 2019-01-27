@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-const Hobbie = (props) => {
+const Bubble = (props) => {
   return (
     <div data-aos="fade-right">
       {" "}
@@ -13,4 +13,4 @@ const Hobbie = (props) => {
   );
 };
 
-export default Hobbie;
+export default Bubble;
