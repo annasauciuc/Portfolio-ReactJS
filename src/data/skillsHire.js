@@ -1,4 +1,4 @@
- const projects = [{
+ const skillsHire = [{
     id: 1,
     className: 'fas  fa-users',
     text: 'HIRETEAMWORKP',
@@ -31,4 +31,4 @@
 }
 
 ];
-export default projects;
+export default skillsHire;

@@ -1,5 +1,5 @@
 
-import skillsHire from "./../skillsHire";
+import skillsHire from "../data/skillsHire";
 
 function getHireCards(){
 return skillsHire;

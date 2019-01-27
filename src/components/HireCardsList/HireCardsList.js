@@ -13,14 +13,14 @@ class HireCardsList extends Component {
     const { languageSelected } = this.props;
     return (
       <div className="row">
-        {getHireCards().map((user, i) => {
+        {getHireCards().map((card, i) => {
           return (
             <HireCard
               key={i}
-              id={user.id}
-              className={user.className}
-              text={getText(user.text, languageSelected)}
-              title={getText(user.title, languageSelected)}
+              id={card.id}
+              className={card.className}
+              text={getText(card.text, languageSelected)}
+              title={getText(card.title, languageSelected)}
             />
           );
         })}
