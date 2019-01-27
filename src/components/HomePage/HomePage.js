@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import SectionTitle from "./../SectionTitle/SectionTitle";
-import Header from "./../Header/Header";
-import { getText } from "./../../services/translation";
-import HobbieList from "./../HobbiesList/HobbiesList";
-import Presentation from "./../Presentacion/Presentation";
-import Quote from "./../Quote/Quote";
-import HireCardsList from "./../HireCardsList/HireCardsList";
-import Contact from "./../Contact/Contact";
+import SectionTitle from "../SectionTitle/SectionTitle";
+import Header from "../Header/Header";
+import { getText } from "../../services/translation";
+import HobbieList from "../HobbiesList/HobbiesList";
+import Presentation from "../Presentacion/Presentation";
+import Quote from "../Quote/Quote";
+import HireCardsList from "../HireCardsList/HireCardsList";
+import Contact from "../Contact/Contact";
 
 class Main extends Component {
   constructor(props) {
@@ -39,7 +39,7 @@ class Main extends Component {
           />
 
           <div className="col-lg-12 d-inline-flex mt-5 col-xl-12 col-md-12 col-xs-12">
-            <HireCardsList />
+            <HireCardsList languageSelected={languageSelected} />
           </div>
         </section>
         <Contact />

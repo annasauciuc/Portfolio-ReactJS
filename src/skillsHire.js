@@ -1,33 +1,33 @@
  const projects = [{
     id: 1,
     className: 'fas fa-fist-raised',
-    text: 'The ability to collaborate with clients and peers is crucial for web development. Respecting the others ideas and space also. Nothing is more rewarding when hard work pays off. Always trying to learn new things or reinforcing what i know.',
-    title: 'Hard Worker'
+    text: 'HIRETEAMWORKP',
+    title: 'HIRETEAMWORK'
 },{
     id: 2,
     className: 'fas fa-fist-raised',
-    text: 'The ability to collaborate with clients and peers is crucial for web development. Respecting the others ideas and space also. Nothing is more rewarding when hard work pays off. Always trying to learn new things or reinforcing what i know.',
-    title: 'Hard Worker'
+    text: 'HIREINTIMEP',
+    title: 'HIREINTIME'
 },{
     id: 3,
     className: 'fas fa-fist-raised',
-    text: 'The ability to collaborate with clients and peers is crucial for web development. Respecting the others ideas and space also. Nothing is more rewarding when hard work pays off. Always trying to learn new things or reinforcing what i know.',
-    title: 'Hard Worker'
+    text: 'HIREMOTIVATEDP',
+    title: 'HIREMOTIVATED'
 },{
     id: 4,
     className: 'fas fa-fist-raised',
-    text: 'The ability to collaborate with clients and peers is crucial for web development. Respecting the others ideas and space also. Nothing is more rewarding when hard work pays off. Always trying to learn new things or reinforcing what i know.',
-    title: 'Hard Worker'
+    text: 'HIRELEARNERP',
+    title: 'HIRELEARNER'
 },{
     id: 5,
     className: 'fas fa-fist-raised',
-    text: 'The ability to collaborate with clients and peers is crucial for web development. Respecting the others ideas and space also. Nothing is more rewarding when hard work pays off. Always trying to learn new things or reinforcing what i know.',
-    title: 'Hard Worker'
+    text: 'HIREWORKERP',
+    title: 'HIREWORKER'
 },{
     id: 6,
     className: 'fas fa-fist-raised',
-    text: 'The ability to collaborate with clients and peers is crucial for web development. Respecting the others ideas and space also. Nothing is more rewarding when hard work pays off. Always trying to learn new things or reinforcing what i know.',
-    title: 'Hard Worker'
+    text: 'HIREPASSIONATEP',
+    title: 'HIREPASSIONATE'
 }
 
 ];
