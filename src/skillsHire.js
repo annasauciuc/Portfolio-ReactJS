@@ -1,21 +1,21 @@
  const projects = [{
     id: 1,
-    className: 'fas fa-fist-raised',
+    className: 'fas  fa-users',
     text: 'HIRETEAMWORKP',
     title: 'HIRETEAMWORK'
 },{
     id: 2,
-    className: 'fas fa-fist-raised',
+    className: 'fas fa-clock',
     text: 'HIREINTIMEP',
     title: 'HIREINTIME'
 },{
     id: 3,
-    className: 'fas fa-fist-raised',
+    className: 'fab fa-medapps',
     text: 'HIREMOTIVATEDP',
     title: 'HIREMOTIVATED'
 },{
     id: 4,
-    className: 'fas fa-fist-raised',
+    className: 'fas fa-fast-forward',
     text: 'HIRELEARNERP',
     title: 'HIRELEARNER'
 },{
@@ -25,7 +25,7 @@
     title: 'HIREWORKER'
 },{
     id: 6,
-    className: 'fas fa-fist-raised',
+    className: 'fas fa-heart',
     text: 'HIREPASSIONATEP',
     title: 'HIREPASSIONATE'
 }
