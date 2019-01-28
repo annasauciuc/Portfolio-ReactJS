@@ -1,0 +1,12 @@
+.autoWidth {
+    width: 70%;
+    margin: auto auto;
+}
+
+#projectsTitle {
+    padding-top: 80px;
+}
+
+#main p {
+    font-size: 1.2rem;
+}

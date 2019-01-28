@@ -1,0 +1,36 @@
+.fa-html5 {
+    color: #DD4B25;
+}
+
+.fa-css3 {
+    color: #2196F3;
+}
+
+.fa-js-square {
+    color: #EFD81D;
+}
+
+.fa-2x {
+    margin-right: 5px;
+}
+
+.fa-eye {
+    color: #1ab394;
+}
+
+.fa-sass {
+    color: #C96195;
+}
+
+.fa-code-branch {
+    color: black;
+}
+
+.greenFav {
+    color: #00af83;
+    border-color: #00af83;
+}
+
+#main p {
+    font-size: 1.2rem;
+}

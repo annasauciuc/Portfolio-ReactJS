@@ -1,9 +1,8 @@
 import React, { Component } from "react";
 import Navigation from "./../Navigation/Navigation";
 import HomePage from "./../HomePage/HomePage";
-import ProjectsPage from './../ProjectsPage/ProjectsPage'
+import ProjectsPage from "./../ProjectsPage/ProjectsPage";
 import Footer from "./Footer/Footer";
-
 
 class Layout extends Component {
   constructor(props) {
@@ -13,7 +12,7 @@ class Layout extends Component {
       languageSelected: "eng"
     };
   }
-  onChangeLanguage= (lang) =>{
+  onChangeLanguage = lang => {
     if (lang == "esp") {
       this.setState({
         languageSelected: "esp"
@@ -23,14 +22,16 @@ class Layout extends Component {
         languageSelected: "eng"
       });
     }
-  }
+  };
   render() {
     const { languageSelected } = this.state;
     return (
       <div>
-        <Navigation languageSelected={languageSelected} onChangeLanguage={this.onChangeLanguage} />
-        <HomePage languageSelected={languageSelected} />
-        <ProjectsPage languageSelected={languageSelected}/>
+        <Navigation
+          languageSelected={languageSelected}
+          onChangeLanguage={this.onChangeLanguage}
+        />
+        <ProjectsPage  languageSelected={languageSelected}/>
         <Footer languageSelected={languageSelected} />
       </div>
     );

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
-import netflix from './../ProjectsPage/projects/floats.jpg'
+import netflix from './../../ProjectsPage/projectsImages/netflix.jpg'
+import './Project.css'
 
 class Project extends Component {
   constructor(props) {

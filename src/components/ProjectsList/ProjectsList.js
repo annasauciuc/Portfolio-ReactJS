@@ -1,7 +1,7 @@
 import React,{Component} from "react";
 
-import Project from './../Project/Project'
-
+import Project from './Project/Project'
+import './Project/Project.css'
 import {getProjectsData} from './../../services/projects'
 import { getText } from "./../../services/translation";
 

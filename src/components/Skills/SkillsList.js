@@ -20,19 +20,25 @@ class SkillsList extends Component {
         <hr className="underlined" />
         <div className="container">
           <div className="col-lg-12  col-xl-12  col-md-12 col-xs-12 ">
-            <div className="text-center mt-5" id="skillsDivs" data-aos="fade-down">
-              <Bubble styleClass="devicon-css3-plain colored" />
+            <div
+              className="text-center mt-5"
+              id="skillsDivs"
+              data-aos="fade-down"
+            >
               <Bubble styleClass="devicon-html5-plain colored" />
+              <Bubble styleClass="devicon-css3-plain colored" />
               <Bubble styleClass="devicon-sass-original colored" />
-              <Bubble styleClass="devicon-linux-plain colored" />
-              <Bubble styleClass="fab fa-slack" />
-              <Bubble styleClass="devicon-trello-plain colored" />
+              <Bubble styleClass="devicon-react-plain colored" />
+              <Bubble styleClass="devicon-javascript-plain colored" />
+              <Bubble styleClass="devicon-jquery-plain colored" />
               <Bubble styleClass="devicon-visualstudio-plain colored" />
               <Bubble styleClass="devicon-git-plain colored" />
               <Bubble styleClass="devicon-github-plain colored" />
+              <Bubble styleClass="devicon-trello-plain colored" />
               <Bubble styleClass="devicon-devicon-plain colored" />
               <Bubble styleClass="devicon-bootstrap-plain-wordmark colored" />
-              <Bubble styleClass="devicon-jquery-plain colored" />
+              
+              <Bubble styleClass="fab fa-slack" />
             </div>
           </div>
         </div>
