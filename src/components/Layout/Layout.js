@@ -4,7 +4,7 @@ import HomePage from "./../HomePage/HomePage";
 import ProjectsPage from "./../ProjectsPage/ProjectsPage";
 import Footer from "./Footer/Footer";
 import Aux from "./../Hoc/_Aux";
-import { Route, Link } from "react-router-dom";
+import { Route, Link, Switch } from "react-router-dom";
 class Layout extends Component {
   constructor(props) {
     super(props);
@@ -32,12 +32,8 @@ class Layout extends Component {
           languageSelected={languageSelected}
           onChangeLanguage={this.onChangeLanguage}
         />
-        <Route  languageSelected={languageSelected} path="/" exact component={HomePage} />
-        <Route
-          languageSelected={languageSelected}
-          path="/projects"
-          component={ProjectsPage}
-        />
+	{this.props.children}
+     
         <Footer languageSelected={languageSelected} />
       </Aux>
     );
