@@ -1,11 +1,11 @@
-import React,{Component} from "react";
+import React,{PureComponent} from "react";
 
 import HireCard from "../HireCard/HireCard";
 import "./HireCardsList.css";
 import { getHireCards } from "./../../services/hire";
 import { getText } from "./../../services/translation";
 
-class HireCardsList extends Component {
+class HireCardsList extends PureComponent {
   constructor(props) {
     super(props);
   }
@@ -29,4 +29,4 @@ class HireCardsList extends Component {
   }
 }
 
-export default HireCardsList;
+export default React.memo(HireCardsList);
