@@ -37,8 +37,7 @@ class Navigation extends Component {
             role="button"
             aria-controls="navbarToggler"
             aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+            aria-label="Toggle navigation">
             <div className="nav__spans">
               <span className="nav_span--1" />
               <span className="nav_span--2" />

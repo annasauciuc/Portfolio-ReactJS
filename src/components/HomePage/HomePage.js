@@ -7,7 +7,7 @@ import Presentation from "../Presentacion/Presentation";
 import Quote from "../Quote/Quote";
 import HireCardsList from "../HireCardsList/HireCardsList";
 import Contact from "../Contact/Contact";
-
+import Aux from './../Hoc/Auxx/_Aux'
 class Main extends Component {
   constructor(props) {
     super(props);
@@ -16,7 +16,7 @@ class Main extends Component {
   render() {
     const {languageSelected} = this.props;
     return (
-      <div>
+      <Aux>
         <Header languageSelected={languageSelected} />
         <Presentation languageSelected={languageSelected} />
         <HobbieList />
@@ -43,7 +43,7 @@ class Main extends Component {
           </div>
         </section>
         <Contact />
-      </div>
+      </Aux>
     );
   }
 }

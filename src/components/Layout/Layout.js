@@ -3,7 +3,7 @@ import Navigation from "./../Navigation/Navigation";
 import HomePage from "./../HomePage/HomePage";
 import ProjectsPage from "./../ProjectsPage/ProjectsPage";
 import Footer from "./Footer/Footer";
-
+import Aux from './../Hoc/Auxx/_Aux'
 class Layout extends Component {
   constructor(props) {
     super(props);
@@ -26,14 +26,15 @@ class Layout extends Component {
   render() {
     const { languageSelected } = this.state;
     return (
-      <div>
+      <Aux>
         <Navigation
           languageSelected={languageSelected}
           onChangeLanguage={this.onChangeLanguage}
         />
+        <HomePage languageSelected={languageSelected}/>
         <ProjectsPage  languageSelected={languageSelected}/>
         <Footer languageSelected={languageSelected} />
-      </div>
+      </Aux>
     );
   }
 }
