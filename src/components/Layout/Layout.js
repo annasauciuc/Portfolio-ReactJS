@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Navigation from "./../Navigation/Navigation";
 import HomePage from "./../HomePage/HomePage";
+import ProjectsPage from './../ProjectsPage/ProjectsPage'
 import Footer from "./Footer/Footer";
 
 
@@ -29,6 +30,7 @@ class Layout extends Component {
       <div>
         <Navigation languageSelected={languageSelected} onChangeLanguage={this.onChangeLanguage} />
         <HomePage languageSelected={languageSelected} />
+        <ProjectsPage languageSelected={languageSelected}/>
         <Footer languageSelected={languageSelected} />
       </div>
     );

@@ -1,8 +1,8 @@
 import React,{Component} from "react";
 
+import Project from './../Project/Project'
 
-
-
+import {getProjectsData} from './../../services/projects'
 import { getText } from "./../../services/translation";
 
 class ProjectsList extends Component {
@@ -13,7 +13,7 @@ class ProjectsList extends Component {
     const { languageSelected } = this.props;
     return (
       <div className="row">
-        {getHireCards().map((user, i) => {
+        {getProjectsData().map((user, i) => {
           return (
             <Project
               key={i}
