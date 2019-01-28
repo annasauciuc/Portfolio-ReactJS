@@ -8,7 +8,7 @@ import Quote from "../Quote/Quote";
 import HireCardsList from "../HireCardsList/HireCardsList";
 import Contact from "../Contact/Contact";
 import Aux from './../Hoc/_Aux'
-class Main extends Component {
+class HomePage extends Component {
   constructor(props) {
     super(props);
 
@@ -42,10 +42,10 @@ class Main extends Component {
             <HireCardsList languageSelected={languageSelected} />
           </div>
         </section>
-        <Contact />
+        <Contact languageSelected={languageSelected} />
       </Aux>
     );
   }
 }
 
-export default Main;
+export default HomePage;

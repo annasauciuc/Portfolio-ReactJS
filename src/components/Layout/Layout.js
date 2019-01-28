@@ -3,7 +3,8 @@ import Navigation from "./../Navigation/Navigation";
 import HomePage from "./../HomePage/HomePage";
 import ProjectsPage from "./../ProjectsPage/ProjectsPage";
 import Footer from "./Footer/Footer";
-import Aux from './../Hoc/_Aux'
+import Aux from "./../Hoc/_Aux";
+import { Route, Link } from "react-router-dom";
 class Layout extends Component {
   constructor(props) {
     super(props);
@@ -31,8 +32,12 @@ class Layout extends Component {
           languageSelected={languageSelected}
           onChangeLanguage={this.onChangeLanguage}
         />
-        <HomePage languageSelected={languageSelected}/>
-        <ProjectsPage  languageSelected={languageSelected}/>
+        <Route  languageSelected={languageSelected} path="/" exact component={HomePage} />
+        <Route
+          languageSelected={languageSelected}
+          path="/projects"
+          component={ProjectsPage}
+        />
         <Footer languageSelected={languageSelected} />
       </Aux>
     );

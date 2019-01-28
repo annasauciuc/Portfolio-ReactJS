@@ -3,7 +3,7 @@ import "./Navigation.css";
 import favicon from "./images/favicon.png";
 import spainFlag from "./images/spain-flag-icon-32.png";
 import englandFlag from "./images/united-kingdom-flag-icon-32.png";
-
+import {  Link } from "react-router-dom";
 class Navigation extends Component {
   constructor(props) {
     super(props);
@@ -18,8 +18,8 @@ class Navigation extends Component {
       navCollapsed: !this.state.navCollapsed
     });
   };
-  selectLanguage = (lang) => {
-    const {onChangeLanguage} = this.props;
+  selectLanguage = lang => {
+    const { onChangeLanguage } = this.props;
     onChangeLanguage(lang);
   };
   render() {
@@ -27,17 +27,20 @@ class Navigation extends Component {
     return (
       <div>
         <nav className="navbar fixed-top  navbar-expand-lg navbar-dark">
-          <a className="text-light mr-auto" href="#">
+      
             {" "}
-            <img src={favicon} style={{ width: "80px" }} alt="favicon am" />
-          </a>
+            <Link  className="text-light mr-auto" to="/">
+              <img src={favicon} style={{ width: "80px" }} alt="favicon am" />
+            </Link>
+     
           <div
             onClick={this.onToggleNav}
             className="navbar-toggler"
             role="button"
             aria-controls="navbarToggler"
             aria-expanded="false"
-            aria-label="Toggle navigation">
+            aria-label="Toggle navigation"
+          >
             <div className="nav__spans">
               <span className="nav_span--1" />
               <span className="nav_span--2" />
@@ -49,14 +52,15 @@ class Navigation extends Component {
             className={(navCollapsed ? "collapse" : "") + " navbar-collapse"}
           >
             <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
-              <li className="nav-item">
-                <a
+              <li>
+                <Link
                   className="nav-link hoverLine"
-                  id="menuMyProjects"
-                  href="html/projects.html"
+                  to={{
+                    pathname: "/projects"
+                  }}
                 >
-                  PROJECTS<span className="sr-only">(current)</span>
-                </a>
+                  PROJECTS
+                </Link>
               </li>
               <li className="nav-item">
                 <a
@@ -104,6 +108,7 @@ class Navigation extends Component {
             </div>
           </div>
         </nav>
+      
       </div>
     );
   }
