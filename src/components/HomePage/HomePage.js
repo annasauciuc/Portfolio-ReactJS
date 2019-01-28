@@ -7,7 +7,7 @@ import Presentation from "../Presentacion/Presentation";
 import Quote from "../Quote/Quote";
 import HireCardsList from "../HireCardsList/HireCardsList";
 import Contact from "../Contact/Contact";
-import Aux from './../Hoc/Auxx/_Aux'
+import Aux from './../Hoc/_Aux'
 class Main extends Component {
   constructor(props) {
     super(props);

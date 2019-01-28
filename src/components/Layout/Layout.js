@@ -3,7 +3,7 @@ import Navigation from "./../Navigation/Navigation";
 import HomePage from "./../HomePage/HomePage";
 import ProjectsPage from "./../ProjectsPage/ProjectsPage";
 import Footer from "./Footer/Footer";
-import Aux from './../Hoc/Auxx/_Aux'
+import Aux from './../Hoc/_Aux'
 class Layout extends Component {
   constructor(props) {
     super(props);
