@@ -18,10 +18,10 @@ class HomePage extends Component {
         <Presentation languageSelected={languageSelected} />
         <HobbieList />
         <section className="quoteSection col">
-          <div className=" presentation">
+          <div className="presentation">
             <Quote
            
-              styleClass="h2 ml-3 mr-3 text-center quote"
+              styleClass="h2 ml-3 mr-3 pt-4 text-center quote"
               text= {getText("CODEQUOTE",languageSelected)}
               title= {getText("AUTHOR",languageSelected)}
             />{" "}
