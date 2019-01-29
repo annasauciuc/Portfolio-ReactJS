@@ -1,13 +1,11 @@
 import React, { Component } from "react";
-import Bubble from "./../Hobbie/Hobbie";
+import Bubble from "../Hobbie/Bubble";
 import "./HobbiesList.css";
 import { getText } from "./../../services/translation";
 import SectionTitle from "./../SectionTitle/SectionTitle";
 
 class HobbieList extends Component {
-  constructor(props) {
-    super(props);
-  }
+ 
   render() {
     const { languageSelected } = this.props;
     return (

@@ -3,9 +3,7 @@ import { getText } from "./../../../services/translation";
 import Quote from "./../../Quote/Quote";
 import "./Footer.css";
 class Footer extends Component {
-  constructor(props) {
-    super(props);
-  }
+
   render() {
     const { languageSelected } = this.props;
     return (

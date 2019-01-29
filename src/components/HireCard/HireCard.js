@@ -3,7 +3,7 @@ import React from "react";
 import "./HireCard.css";
 
 const HireCard = props => {
-  const { className, text, title, id } = props;
+  const { className, text, title } = props;
   return (
     <div className="card col-xs-12 col-sm-6 col-md-4">
       <i className={className} />

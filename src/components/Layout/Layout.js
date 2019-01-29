@@ -1,13 +1,10 @@
 import React, { Component } from "react";
+
 import Navigation from "./../Navigation/Navigation";
-import HomePage from "./../HomePage/HomePage";
-import ProjectsPage from "./../ProjectsPage/ProjectsPage";
 import Footer from "./Footer/Footer";
 
 class Layout extends Component {
-  constructor(props) {
-    super(props);
-  }
+
   onChangeLanguageHandler = lang => {
     const { onChangeLanguage } = this.props;
     onChangeLanguage(lang);

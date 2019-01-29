@@ -26,6 +26,7 @@ class ProjectsList extends Component {
               hrefGit={project.hrefGit}
               hrePreview={project.hrefPreview}
               src={project.src}
+              alt={project.alt}
             />
           );
         })}

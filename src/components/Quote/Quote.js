@@ -1,7 +1,7 @@
-import React, { Component } from "react";
+import React from "react";
 import "./Quote.css";
 const Quote = props => {
-  const { styleClass, text, title, id } = props;
+  const { styleClass, text, id } = props;
   return (
     <blockquote className={styleClass} id={id} >
       <em>{text}</em>

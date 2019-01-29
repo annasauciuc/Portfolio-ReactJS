@@ -1,18 +1,16 @@
 import React, { Component } from "react";
 
-import netflix from "./../../ProjectsPage/projectsImages/netflix.jpg";
+
 import "./Project.css";
-import images from './images'
+
 
 class Project extends Component {
-  constructor(props) {
-    super(props);
-  }
+
 
   checkClassParityDiv1 = () => {
 
     const { par } = this.props;
-    console.log('par :', par);
+  
     if (par) {
       return "col-md-6 order-md-2";
     } else {
@@ -28,8 +26,8 @@ class Project extends Component {
     }
   };
   render() {
-    const { text, title, id, classStyle,links,hrefGit,hrefPreview,src, ...other } = this.props;
-console.log('src :', src);
+    const { text, title, id, classStyle,links,hrefGit,hrefPreview,src,alt,...other } = this.props;
+
     return (
       <section data-aos="fade-down">
         <div className="row align-items-center no-gutters">
@@ -47,14 +45,17 @@ console.log('src :', src);
                 className="btn btn-outline greenFav g-font-weight-600 rounded p-1"
                 href={hrefGit}
                 target="_blank"
+              
+                rel="noopener noreferrer" 
               >
                 See github
                 <i className="fab ml-1  fa-github " />
               </a>
               <a
                 href={hrefPreview}
+               
                 className="btn btn btn-outline greenFav g-font-weight-600 rounded p-1"
-                target="_blank"
+                target="_blank"  rel="noopener noreferrer"
               >
                 Preview
                 <i className="far  ml-1  fa-eye" />
@@ -75,7 +76,8 @@ console.log('src :', src);
                 <img
                   className="img-fluid"
                   src={src}
-                  alt="project how i am"
+                  alt={alt}
+                  rel="noopener noreferrer"
                 />
               </div>
             </div>

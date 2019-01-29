@@ -14,7 +14,8 @@ const projectsData = [
     par: true,
     hrefGit: "https://github.com/annasauciuc/Netflix-Pixel-Perfect-Project",
     hrefPreview: "http://netflix-project.amsauciuc.com",
-    src: `${netflix}`
+    src: `${netflix}`,
+    alt: "netflix project"
   },
   {
     id: 2,
@@ -24,7 +25,8 @@ const projectsData = [
     par: false,
     hrefGit: "https://github.com/20H-Talent/ikigai-project-3-annasauciuc",
     hrefPreview: "http://form-project.amsauciuc.com ",
-    src: `${form}`
+    src: `${form}`,
+    alt: "form project"
   },
   {
     id: 3,
@@ -34,7 +36,8 @@ const projectsData = [
     par: true,
     hrefGit: "https://github.com/annasauciuc/Mock-up-Sass-project",
     hrefPreview: "http://sass-project.amsauciuc.com",
-    src: `${sass}`
+    src: `${sass}`,
+    alt: "sass project"
   },
   {
     id: 4,
@@ -44,7 +47,8 @@ const projectsData = [
     par: false,
     hrefGit: "https://github.com/annasauciuc/CV-PANEL",
     hrefPreview: "http://admin-panel.amsauciuc.com",
-    src: `${adminPanel}`
+    src: `${adminPanel}`,
+    alt: "administration panel"
   },
   {
     id: 5,
@@ -54,7 +58,8 @@ const projectsData = [
     par: true,
     hrefGit: "https://github.com/annasauciuc/Netflix-Pixel-Perfect-Project",
     hrefPreview: "http://netflix-project.amsauciuc.com",
-    src: `${floats}`
+    src: `${floats}`,
+    alt: "floats project"
   },
   {
     id: 6,
@@ -64,7 +69,8 @@ const projectsData = [
     par: false,
     hrefGit: "https://github.com/annasauciuc/20h-First-Project",
     hrefPreview: "http://how-i-am.amsauciuc.com",
-    src: `${howIAm}`
+    src: `${howIAm}`,
+    alt: "presentation project"
   }
 ];
 export default projectsData;

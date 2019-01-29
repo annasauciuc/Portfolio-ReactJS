@@ -3,14 +3,14 @@ import "./Navigation.css";
 import favicon from "./images/favicon.png";
 import spainFlag from "./images/spain-flag-icon-32.png";
 import englandFlag from "./images/united-kingdom-flag-icon-32.png";
-import {  Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { getText } from "./../../services/translation";
 class Navigation extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      navCollapsed: true,
+      navCollapsed: true
     };
   }
   onToggleNav = () => {
@@ -25,16 +25,14 @@ class Navigation extends Component {
   render() {
     const { navCollapsed } = this.state;
     const { languageSelected } = this.props;
-    console.log('languadeSelected :', languageSelected);
+    console.log("languadeSelected :", languageSelected);
     return (
       <div>
         <nav className="navbar fixed-top  navbar-expand-lg navbar-dark">
-      
-            {" "}
-            <Link  className="text-light mr-auto" to="/">
-              <img src={favicon} style={{ width: "80px" }} alt="favicon am" />
-            </Link>
-     
+          {" "}
+          <Link className="text-light mr-auto" to="/">
+            <img src={favicon} style={{ width: "80px" }} alt="favicon am" />
+          </Link>
           <div
             onClick={this.onToggleNav}
             className="navbar-toggler"
@@ -61,7 +59,7 @@ class Navigation extends Component {
                     pathname: "/projects"
                   }}
                 >
-              {getText("MENU_MY_PROJECTS", languageSelected)}
+                  {getText("MENU_MY_PROJECTS", languageSelected)}
                 </Link>
               </li>
               <li className="nav-item">
@@ -70,7 +68,7 @@ class Navigation extends Component {
                   id="menuAbout"
                   href="#aboutMe"
                 >
-              {getText("MENU_ABOUT_ME", languageSelected)}
+                  {getText("MENU_ABOUT_ME", languageSelected)}
                 </a>
               </li>
               <li className="nav-item">
@@ -79,7 +77,7 @@ class Navigation extends Component {
                   id="menuContact"
                   href="#contact"
                 >
-                {getText("CONTACT", languageSelected)}
+                  {getText("CONTACT", languageSelected)}
                 </a>
               </li>
             </ul>
@@ -95,7 +93,6 @@ class Navigation extends Component {
               >
                 <img src={spainFlag} alt="spain flag" />
               </a>
-
               <a
                 onClick={() => {
                   this.selectLanguage("eng");
@@ -110,7 +107,6 @@ class Navigation extends Component {
             </div>
           </div>
         </nav>
-      
       </div>
     );
   }

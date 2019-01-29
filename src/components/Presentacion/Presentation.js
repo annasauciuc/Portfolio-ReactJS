@@ -4,9 +4,7 @@ import { getText } from "./../../services/translation";
 import SectionTitle from "./../SectionTitle/SectionTitle";
 
 class Presentation extends Component {
-  constructor(props) {
-    super(props);
-  }
+  
   render() {
     const { languageSelected } = this.props;
     return (
