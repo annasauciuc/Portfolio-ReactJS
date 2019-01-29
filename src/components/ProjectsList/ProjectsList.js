@@ -14,15 +14,18 @@ class ProjectsList extends Component {
     return (
       <section data-aos="fade-down">
      
-        {getProjectsData().map((user, i) => {
+        {getProjectsData().map((project, i) => {
+        console.log(project)
           return (
             <Project
               key={i}
-              id={user.id}
-              className={user.className}
-              text={getText(user.text, languageSelected)}
-              title={getText(user.title, languageSelected)}
-              par={user.par}
+              id={project.id}
+              className={project.className}
+              text={getText(project.text, languageSelected)}
+              title={getText(project.title, languageSelected)}
+              par={project.par}
+              hrefGit={project.hrefGit}
+              hrePreview={project.hrefPreview}
             />
           );
         })}

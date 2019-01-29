@@ -27,31 +27,31 @@ class Project extends Component {
     }
   };
   render() {
-    const { text, title, id, classStyle } = this.props;
-
+    const { text, title, id, classStyle,links,hrefGit,hrefPreview, ...other } = this.props;
+console.log('other,hrefGit,hrefPreview :', other,links,hrefPreview,hrefGit);
     return (
-      <section className="howIam" data-aos="fade-down">
+      <section data-aos="fade-down">
         <div className="row align-items-center no-gutters">
           <div className={this.checkClassParityDiv1()}>
             <div className="text-center">
               <div className="mb-5">
-                <h3 className="h2  mb-4" id="whoProject">
+                <h3 className="h2  mb-4">
                   {title}
                 </h3>
-                <p className="" id="whoProjectText">
+                <p >
                   {text}
                 </p>
               </div>
               <a
                 className="btn btn-outline greenFav g-font-weight-600 rounded p-1"
-                href="https://github.com/annasauciuc/20h-First-Project"
+                href={hrefGit}
                 target="_blank"
               >
                 See github
                 <i className="fab ml-1  fa-github " />
               </a>
               <a
-                href="http://how-i-am.amsauciuc.com"
+                href={hrefPreview}
                 className="btn btn btn-outline greenFav g-font-weight-600 rounded p-1"
                 target="_blank"
               >
