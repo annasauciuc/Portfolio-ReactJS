@@ -19,8 +19,9 @@ class ProjectsPage extends Component {
           <SectionTitle
             text={getText("PROJECTS", languageSelected)}
             title="h2"
-            classStyles="h1 green ml-5 mt-5"
+            classStyles="h1 projectsTitle green ml-5 mt-5"
             data-aos="fade-down"
+           
           />
 
           <hr className="underlined ml-5" />

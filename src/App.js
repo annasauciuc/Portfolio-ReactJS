@@ -38,7 +38,7 @@ class App extends Component {
     const { languageSelected } = this.state;
     return (
       <BrowserRouter>
-        <Layout onChangeLanguage={this.onChangeLanguage}>
+        <Layout onChangeLanguage={this.onChangeLanguage} languageSelected={languageSelected}>
           <Switch>
             <Route
               exact

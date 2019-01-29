@@ -4,13 +4,13 @@ import favicon from "./images/favicon.png";
 import spainFlag from "./images/spain-flag-icon-32.png";
 import englandFlag from "./images/united-kingdom-flag-icon-32.png";
 import {  Link } from "react-router-dom";
+import { getText } from "./../../services/translation";
 class Navigation extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
       navCollapsed: true,
-      languageSelected: this.props.languageSelected
     };
   }
   onToggleNav = () => {
@@ -24,6 +24,8 @@ class Navigation extends Component {
   };
   render() {
     const { navCollapsed } = this.state;
+    const { languageSelected } = this.props;
+    console.log('languadeSelected :', languageSelected);
     return (
       <div>
         <nav className="navbar fixed-top  navbar-expand-lg navbar-dark">
@@ -59,7 +61,7 @@ class Navigation extends Component {
                     pathname: "/projects"
                   }}
                 >
-                  PROJECTS
+              {getText("MENU_MY_PROJECTS", languageSelected)}
                 </Link>
               </li>
               <li className="nav-item">
@@ -68,7 +70,7 @@ class Navigation extends Component {
                   id="menuAbout"
                   href="#aboutMe"
                 >
-                  ABOUT
+              {getText("MENU_ABOUT_ME", languageSelected)}
                 </a>
               </li>
               <li className="nav-item">
@@ -77,7 +79,7 @@ class Navigation extends Component {
                   id="menuContact"
                   href="#contact"
                 >
-                  CONTACT
+                {getText("CONTACT", languageSelected)}
                 </a>
               </li>
             </ul>
