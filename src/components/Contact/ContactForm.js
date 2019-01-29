@@ -11,7 +11,7 @@ const ContactForm = () => (
       <input
         className="form-control  w-100"
         required
-        autoFocus
+      
         name="email"
         placeholder="Your email"
         type="email"
