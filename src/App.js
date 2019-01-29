@@ -1,17 +1,32 @@
 import React, { Component } from "react";
 import AOS from "aos";
-import ProjectsPage from "./components/ProjectsPage/ProjectsPage";
-import HomePage from "./components/HomePage/HomePage";
+import { Route, Switch, BrowserRouter } from "react-router-dom";
 import "aos/dist/aos.css";
 import "./App.css";
-import { Route, Link, Switch } from "react-router-dom";
-import { BrowserRouter } from "react-router-dom";
+import HomePage from "./components/HomePage/HomePage";
+import ProjectsPage from "./components/ProjectsPage/ProjectsPage";
 import Layout from "./components/Layout/Layout";
 
 class App extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      languageSelected: "eng"
+    };
   }
+
+  onChangeLanguage = lang => {
+    if (lang == "esp") {
+      this.setState({
+        languageSelected: "esp"
+      });
+    } else if (lang == "eng") {
+      this.setState({
+        languageSelected: "eng"
+      });
+    }
+  };
 
   componentDidMount() {
     AOS.init({
@@ -20,29 +35,26 @@ class App extends Component {
   }
 
   render() {
-    const { languageSelected } = this.props;
+    const { languageSelected } = this.state;
     return (
-      <div className="App">
       <BrowserRouter>
- 
-        <Layout>
+        <Layout onChangeLanguage={this.onChangeLanguage}>
           <Switch>
             <Route
-              languageSelected={languageSelected}
-              path="/"
               exact
-              component={HomePage}
+              path="/"
+              render={() => <HomePage languageSelected={languageSelected} />}
             />
             <Route
-              languageSelected={languageSelected}
+              exact
               path="/projects"
-              component={ProjectsPage}
+              render={() => (
+                <ProjectsPage languageSelected={languageSelected} />
+              )}
             />
           </Switch>
         </Layout>
-        </BrowserRouter>
- 
-      </div>
+      </BrowserRouter>
     );
   }
 }

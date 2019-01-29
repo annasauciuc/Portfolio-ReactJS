@@ -1,41 +1,32 @@
 import React, { Component } from "react";
 import Navigation from "./../Navigation/Navigation";
 import HomePage from "./../HomePage/HomePage";
-import ProjectsPage from "./../ProjectsPage/ProjectsPage";
+import ProjectsPage from './../ProjectsPage/ProjectsPage'
 import Footer from "./Footer/Footer";
-import Aux from "./../Hoc/_Aux";
-import { Route, Link, Switch } from "react-router-dom";
+
+
 class Layout extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      languageSelected: "eng"
+      languageSelected: this.props.languageSelected
     };
   }
-  onChangeLanguage = lang => {
-    if (lang == "esp") {
-      this.setState({
-        languageSelected: "esp"
-      });
-    } else if (lang == "eng") {
-      this.setState({
-        languageSelected: "eng"
-      });
-    }
-  };
+  onChangeLanguageHandler= (lang) =>{
+    const { onChangeLanguage } = this.props;
+    onChangeLanguage(lang);
+  }
   render() {
-    const { languageSelected } = this.state;
+    const { languageSelected } = this.props;
     return (
-      <Aux>
-        <Navigation
-          languageSelected={languageSelected}
-          onChangeLanguage={this.onChangeLanguage}
-        />
-	{this.props.children}
-     
+      <div>
+        <Navigation languageSelected={languageSelected} onChangeLanguage={this.onChangeLanguageHandler} />
+   {this.props.children}
+        {/* <HomePage languageSelected={languageSelected} /> */}
+        {/* <ProjectsPage languageSelected={languageSelected}/> */}
         <Footer languageSelected={languageSelected} />
-      </Aux>
+      </div>
     );
   }
 }
