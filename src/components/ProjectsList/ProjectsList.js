@@ -4,11 +4,10 @@ import Project from "./Project/Project";
 import "./Project/Project.css";
 import { getProjectsData } from "./../../services/projects";
 import { getText } from "./../../services/translation";
-
+import images from './Project/images'
+console.log('images', images)
 class ProjectsList extends Component {
-  constructor(props) {
-    super(props);
-  }
+
   render() {
     const { languageSelected } = this.props;
     return (
@@ -26,6 +25,7 @@ class ProjectsList extends Component {
               par={project.par}
               hrefGit={project.hrefGit}
               hrePreview={project.hrefPreview}
+              src={project.src}
             />
           );
         })}

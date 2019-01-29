@@ -9,10 +9,7 @@ import HireCardsList from "../HireCardsList/HireCardsList";
 import Contact from "../Contact/Contact";
 import Aux from './../Hoc/_Aux'
 class HomePage extends Component {
-  constructor(props) {
-    super(props);
 
-  }
   render() {
     const {languageSelected} = this.props;
     return (

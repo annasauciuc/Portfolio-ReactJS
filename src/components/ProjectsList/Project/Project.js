@@ -2,6 +2,7 @@ import React, { Component } from "react";
 
 import netflix from "./../../ProjectsPage/projectsImages/netflix.jpg";
 import "./Project.css";
+import images from './images'
 
 class Project extends Component {
   constructor(props) {
@@ -27,8 +28,8 @@ class Project extends Component {
     }
   };
   render() {
-    const { text, title, id, classStyle,links,hrefGit,hrefPreview, ...other } = this.props;
-console.log('other,hrefGit,hrefPreview :', other,links,hrefPreview,hrefGit);
+    const { text, title, id, classStyle,links,hrefGit,hrefPreview,src, ...other } = this.props;
+console.log('src :', src);
     return (
       <section data-aos="fade-down">
         <div className="row align-items-center no-gutters">
@@ -73,7 +74,7 @@ console.log('other,hrefGit,hrefPreview :', other,links,hrefPreview,hrefGit);
               <div className="shadow bg-white pa-25">
                 <img
                   className="img-fluid"
-                  src={netflix}
+                  src={src}
                   alt="project how i am"
                 />
               </div>
