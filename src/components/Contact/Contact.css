@@ -7,7 +7,7 @@
     -o-background-size: cover;
     color: rgb(41, 39, 39);
     overflow: hidden;
-    height: 300px;
+    height: 420px;
     width: 100%;
     /* background-color: rgba(0, 0, 0, 0.51); */
 }
@@ -43,4 +43,15 @@
 
 .icon-linkedin {
     color: rgb(0, 119, 181);
+}
+
+.form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+}
+
+.btn-contact {
+    background-color: #24292e;
 }

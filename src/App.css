@@ -185,3 +185,8 @@ a:hover {
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
 }
+
+.btn-contact {
+    background-color: #24292e!important;
+    color: hsla(0, 0%, 100%, .75)!important;
+}

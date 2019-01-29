@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { getText } from "./../../services/translation";
 import SectionTitle from "./../SectionTitle/SectionTitle";
 import "./Contact.css";
+import ContactForm from "./ContactForm";
 const Contact = props => {
   const { languageSelected } = props;
   return (
@@ -31,6 +32,7 @@ const Contact = props => {
           <u> hi@amsauciuc.com</u>
         </a>
       </div>
+      <ContactForm/>
       <div className="mb-2 col-lg-12">
         <a
           href="https://twitter.com/@amsauciuc"
