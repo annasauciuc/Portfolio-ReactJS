@@ -6,7 +6,7 @@ import "./App.css";
 import HomePage from "./components/HomePage/HomePage";
 import ProjectsPage from "./components/ProjectsPage/ProjectsPage";
 import Layout from "./components/Layout/Layout";
-
+import ScrollArea from 'react-scrollbar'
 class App extends Component {
   constructor(props) {
     super(props);
@@ -38,6 +38,7 @@ class App extends Component {
     const { languageSelected } = this.state;
     return (
       <BrowserRouter>
+        <ScrollArea>
         <Layout onChangeLanguage={this.onChangeLanguage} languageSelected={languageSelected}>
           <Switch>
             <Route
@@ -54,6 +55,7 @@ class App extends Component {
             />
           </Switch>
         </Layout>
+        </ScrollArea>
       </BrowserRouter>
     );
   }

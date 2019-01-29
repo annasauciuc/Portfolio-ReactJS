@@ -13,7 +13,7 @@ class ProjectsPage extends Component {
     const { languageSelected } = this.props;
     return (
       <section id="main" className="mt-5 " data-aos="fade-down">
-        <div className="mb-5 pb-5 container">
+        <div className="mb-5 pb-5 ">
           <SectionTitle
             text={getText("PROJECTS", languageSelected)}
             title="h2"
