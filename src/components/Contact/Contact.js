@@ -34,7 +34,7 @@ const Contact = props => {
       </div>
       <div class="text-white h1">||</div>
       <ContactForm/>
-      <div className="mb-2 col-lg-12">
+      <div className="mb-2 mt-4 col-lg-12">
         <a
           href="https://twitter.com/@amsauciuc"
           target="_blank"
