@@ -24,7 +24,7 @@ export const spanishTranslation={
     "FOOTER_TEXT": "Mantente apasionado y lo lograras, estoy segura!",
     "SKILLS": "Mis habilidades ",
     "HOBBIESTITLE": "Hobbies y Intereses",
-    "CODEQUOTE": "Programar no es algo que haces de 9 a 17. No es un trabajo, es una forma de vida.",
+    "CODEQUOTE": " “ Programar no es algo que haces de 9 a 17. No es un trabajo, es una forma de vida.”",
     "AUTHOR": "<u>Un tio inteligente</u>",
     "HIRETITLE": "¿Porque tenerme  en tu equipo?",
     "HIREWORKER": "Gran trabajadora",

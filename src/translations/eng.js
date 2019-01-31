@@ -24,7 +24,7 @@ export const englishTranslations = {
     "FOOTER_TEXT": "Stay passionate and you will thrive, i am sure!",
     "SKILLS": "My skills",
     "HOBBIESTITLE": "Hobbies and Interests",
-    "CODEQUOTE": " Programming isn’t something you do from 9 to 17. It’s not a job, it’s a way of life.",
+    "CODEQUOTE": "“ Programming isn’t something you do from 9 to 17. It’s not a job, it’s a way of life. ”",
     "HIREtITLE": "A smart guy",
     "AUTHOR": "A smart guy",
     "HIRETITLE": "Why would you want me in your team ?",
