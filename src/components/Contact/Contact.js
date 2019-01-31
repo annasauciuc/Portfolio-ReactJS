@@ -32,7 +32,7 @@ const Contact = props => {
           <u> hi@amsauciuc.com</u>
         </a>
       </div>
-      <div class="text-white h1">||</div>
+      <div className="text-white h1">||</div>
       <ContactForm/>
       <div className="mb-2 mt-4 col-lg-12">
         <a
