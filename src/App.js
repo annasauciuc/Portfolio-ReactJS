@@ -1,14 +1,19 @@
-import React, { Component } from "react";
+import React, { Component, Suspense } from "react";
+
 import AOS from "aos";
 import { Route, Switch, BrowserRouter } from "react-router-dom";
 import "aos/dist/aos.css";
 import "./App.css";
 import HomePage from "./components/HomePage/HomePage";
-import ProjectsPage from "./components/ProjectsPage/ProjectsPage";
+
+
+//import ProjectsPage from "./components/ProjectsPage/ProjectsPage";
 import Layout from "./components/Layout/Layout";
 import ScrollArea from "react-scrollbar";
-import PageNotFound from './components/PageNotFound/PageNotFound'
-
+import PageNotFound from "./components/PageNotFound/PageNotFound";
+const ProjectsPage = React.lazy(() =>
+  import("./components/ProjectsPage/ProjectsPage")
+);
 class App extends Component {
   constructor(props) {
     super(props);
@@ -55,14 +60,13 @@ class App extends Component {
                 exact
                 path="/projects"
                 render={() => (
-                  <ProjectsPage languageSelected={languageSelected} />
+                  <Suspense fallback={  <div>Loading...</div> }>
+                    {" "}
+                    <ProjectsPage languageSelected={languageSelected} />
+                  </Suspense>
                 )}
               />
-              <Route
-                render={() => (
-                 <PageNotFound/>
-                )}
-              />
+              <Route render={() => <PageNotFound />} />
             </Switch>
           </Layout>
         </ScrollArea>
