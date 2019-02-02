@@ -7,6 +7,7 @@ import HomePage from "./components/HomePage/HomePage";
 import ProjectsPage from "./components/ProjectsPage/ProjectsPage";
 import Layout from "./components/Layout/Layout";
 import ScrollArea from "react-scrollbar";
+import PageNotFound from './components/PageNotFound/PageNotFound'
 
 class App extends Component {
   constructor(props) {
@@ -59,22 +60,7 @@ class App extends Component {
               />
               <Route
                 render={() => (
-                  <div className="projectsTitle m-5">
-                    <h1 className="projectsTitle">
-                      {" "}
-                      Oops seems that the route above
-                      <strong> does not exist within this web page</strong>
-                      .Click the button below so you can return to the main
-                      page.{" "}
-                    </h1>
-                    <a
-                      title="Back to Home Page"
-                      href="/"
-                      rel="noopener noreferrer"
-                    >
-                      <strong>Back to Home Page</strong>
-                    </a>
-                  </div>
+                 <PageNotFound/>
                 )}
               />
             </Switch>
