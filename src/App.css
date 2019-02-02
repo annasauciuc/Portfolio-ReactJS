@@ -189,3 +189,7 @@ a:hover {
     background-color: #24292e!important;
     color: hsla(0, 0%, 100%, .75)!important;
 }
+
+.projectsTitle {
+    padding-top: 80px;
+}
