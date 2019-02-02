@@ -7,13 +7,13 @@ import Presentation from "../Presentacion/Presentation";
 import Quote from "../Quote/Quote";
 import HireCardsList from "../HireCardsList/HireCardsList";
 import Contact from "../Contact/Contact";
-import Aux from './../Hoc/_Aux'
+
 class HomePage extends Component {
 
   render() {
     const {languageSelected} = this.props;
     return (
-      <Aux>
+      <React.Fragment>
         <Header languageSelected={languageSelected} />
         <Presentation languageSelected={languageSelected} />
         <HobbieList />
@@ -40,7 +40,7 @@ class HomePage extends Component {
           </div>
         </section>
         <Contact languageSelected={languageSelected} />
-      </Aux>
+      </React.Fragment>
     );
   }
 }

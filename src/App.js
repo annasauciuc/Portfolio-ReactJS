@@ -6,7 +6,7 @@ import "./App.css";
 import HomePage from "./components/HomePage/HomePage";
 import ProjectsPage from "./components/ProjectsPage/ProjectsPage";
 import Layout from "./components/Layout/Layout";
-import ScrollArea from 'react-scrollbar'
+import ScrollArea from "react-scrollbar";
 class App extends Component {
   constructor(props) {
     super(props);
@@ -39,22 +39,26 @@ class App extends Component {
     return (
       <BrowserRouter>
         <ScrollArea>
-        <Layout onChangeLanguage={this.onChangeLanguage} languageSelected={languageSelected}>
-          <Switch>
-            <Route
-              exact
-              path="/"
-              render={() => <HomePage languageSelected={languageSelected} />}
-            />
-            <Route
-              exact
-              path="/projects"
-              render={() => (
-                <ProjectsPage languageSelected={languageSelected} />
-              )}
-            />
-          </Switch>
-        </Layout>
+          <Layout
+            onChangeLanguage={this.onChangeLanguage}
+            languageSelected={languageSelected}
+          >
+            <Switch>
+              <Route
+                exact
+                path="/"
+                render={() => <HomePage languageSelected={languageSelected} />}
+              />
+              <Route
+                exact
+                path="/projects"
+                render={() => (
+                  <ProjectsPage languageSelected={languageSelected} />
+                )}
+              />
+              <Route render={() => <h1>Page not found</h1>} />
+            </Switch>
+          </Layout>
         </ScrollArea>
       </BrowserRouter>
     );
