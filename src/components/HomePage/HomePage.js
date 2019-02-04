@@ -9,9 +9,8 @@ import HireCardsList from "../HireCardsList/HireCardsList";
 import Contact from "../Contact/Contact";
 
 class HomePage extends Component {
-
   render() {
-    const {languageSelected} = this.props;
+    const { languageSelected } = this.props;
     return (
       <React.Fragment>
         <Header languageSelected={languageSelected} />
@@ -20,17 +19,15 @@ class HomePage extends Component {
         <section className="quoteSection col">
           <div className="presentation">
             <Quote
-           
               styleClass="h2 ml-3 mr-3 pt-4 text-center quote"
-              text= {getText("CODEQUOTE",languageSelected)}
-              title= {getText("AUTHOR",languageSelected)}
+              text={getText("CODEQUOTE", languageSelected)}
+              title={getText("AUTHOR", languageSelected)}
             />{" "}
           </div>
         </section>{" "}
         <section className="hireSection">
           <SectionTitle
-         
-            text={getText("HIRETITLE",languageSelected)}
+            text={getText("HIRETITLE", languageSelected)}
             title="h2"
             classStyles="mt-5 h1 text-center p-5"
           />

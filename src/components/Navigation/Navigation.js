@@ -3,8 +3,10 @@ import "./Navigation.css";
 import favicon from "./images/favicon.png";
 import spainFlag from "./images/spain-flag-icon-32.png";
 import englandFlag from "./images/united-kingdom-flag-icon-32.png";
-import { Link } from "react-router-dom";
+import { Link, Route } from "react-router-dom";
 import { getText } from "./../../services/translation";
+import NavigationItem from "./NavigationItem/NavigationItem";
+import Contact from "./../Contact/Contact";
 class Navigation extends Component {
   constructor(props) {
     super(props);
@@ -22,17 +24,20 @@ class Navigation extends Component {
     const { onChangeLanguage } = this.props;
     onChangeLanguage(lang);
   };
+  checkoutContinuedHandler = () => {
+    this.props.history.replace("/aboutMe");
+  };
   render() {
     const { navCollapsed } = this.state;
     const { languageSelected } = this.props;
-    console.log("languadeSelected :", languageSelected);
+
     return (
       <div>
         <nav className="navbar fixed-top  navbar-expand-lg navbar-dark">
           {" "}
-          <Link className="text-light mr-auto" to="/">
+          <a className="text-light mr-auto" href="/">
             <img src={favicon} style={{ width: "80px" }} alt="favicon am" />
-          </Link>
+          </a>
           <div
             onClick={this.onToggleNav}
             className="navbar-toggler"
@@ -63,20 +68,12 @@ class Navigation extends Component {
                 </Link>
               </li>
               <li className="nav-item">
-                <a
-                  className="nav-link hoverLine"
-                  id="menuAbout"
-                  href="#aboutMe"
-                >
+                <a className="nav-link hoverLine" href="/#aboutMe">
                   {getText("MENU_ABOUT_ME", languageSelected)}
                 </a>
               </li>
               <li className="nav-item">
-                <a
-                  className="nav-link hoverLine"
-                  id="menuContact"
-                  href="#contact"
-                >
+                <a className="nav-link hoverLine" href="/#contact">
                   {getText("CONTACT", languageSelected)}
                 </a>
               </li>
@@ -107,6 +104,9 @@ class Navigation extends Component {
             </div>
           </div>
         </nav>
+        {/* <Route 
+                    path={this.props.match.path + '/aboutMe'} 
+                    render={(props) => (<Contact />)} /> */}
       </div>
     );
   }

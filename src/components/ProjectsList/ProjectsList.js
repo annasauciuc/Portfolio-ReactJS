@@ -5,7 +5,7 @@ import "./Project/Project.css";
 import { getProjectsData } from "./../../services/projects";
 import { getText } from "./../../services/translation";
 import images from './Project/images'
-console.log('images', images)
+
 class ProjectsList extends Component {
 
   render() {
@@ -14,7 +14,7 @@ class ProjectsList extends Component {
       <section data-aos="fade-down">
      
         {getProjectsData().map((project, i) => {
-        console.log(project)
+    
           return (
             <Project
               key={i}

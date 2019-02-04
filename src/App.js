@@ -6,7 +6,6 @@ import "aos/dist/aos.css";
 import "./App.css";
 import HomePage from "./components/HomePage/HomePage";
 
-
 //import ProjectsPage from "./components/ProjectsPage/ProjectsPage";
 import Layout from "./components/Layout/Layout";
 import ScrollArea from "react-scrollbar";
@@ -56,11 +55,12 @@ class App extends Component {
                 path="/"
                 render={() => <HomePage languageSelected={languageSelected} />}
               />
+
               <Route
                 exact
                 path="/projects"
                 render={() => (
-                  <Suspense fallback={  <div>Loading...</div> }>
+                  <Suspense fallback={<div>Loading...</div>}>
                     {" "}
                     <ProjectsPage languageSelected={languageSelected} />
                   </Suspense>

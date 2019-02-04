@@ -2,13 +2,12 @@ import React, { Component } from "react";
 
 import ProjectsList from "./../ProjectsList/ProjectsList";
 import SectionTitle from "./../SectionTitle/SectionTitle";
-import SkillsList from './../Skills/SkillsList'
-import './ProjectsPage.css'
+import SkillsList from "./../Skills/SkillsList";
+import "./ProjectsPage.css";
 
 import { getText } from "../../services/translation";
 
 class ProjectsPage extends Component {
- 
   render() {
     const { languageSelected } = this.props;
     return (
@@ -19,15 +18,13 @@ class ProjectsPage extends Component {
             title="h2"
             classStyles="h1 green projectsTitle ml-5 mt-5"
             data-aos="fade-down"
-           
           />
 
           <hr className="underlined ml-5" />
 
           <ProjectsList languageSelected={languageSelected} />
-        
         </div>
-        <SkillsList languageSelected={languageSelected}/>
+        <SkillsList languageSelected={languageSelected} />
       </section>
     );
   }
