@@ -36,7 +36,10 @@ class Project extends Component {
     } = this.props;
 
     return (
-      <section className="row align-items-center no-gutters" data-aos="fade-down">
+      <section
+        className="row align-items-center no-gutters"
+        data-aos="fade-down"
+      >
         <div className={this.checkClassParityDiv1()}>
           <div className="text-center">
             <div className="mb-5">
@@ -45,20 +48,17 @@ class Project extends Component {
             </div>
             <ExternalLink
               className="btn btn-outline greenFav g-font-weight-600 rounded p-1"
-              href={hrefGit}
-            >
+              href={hrefGit}>
               See github
               <i className="fab ml-1  fa-github " />
             </ExternalLink>
             <ExternalLink
               href={hrefPreview}
-              className="btn btn btn-outline greenFav g-font-weight-600 rounded p-1"
-            >
+              className="btn btn btn-outline greenFav g-font-weight-600 rounded p-1">
               Preview
               <i className="far  ml-1  fa-eye" />
             </ExternalLink>
           </div>
-
           <div className="text-center">
             <div className="mt-3 text-center">
               <i className="fab fa-2x fa-sass" />{" "}
