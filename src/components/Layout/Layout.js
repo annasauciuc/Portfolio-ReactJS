@@ -10,15 +10,12 @@ class Layout extends Component {
   };
   render() {
     const { languageSelected } = this.props;
-
     return (
       <div>
-      
         <Navigation
           languageSelected={languageSelected}
           onChangeLanguage={this.onChangeLanguageHandler}
         />
-        
         {this.props.children}
         <Footer languageSelected={languageSelected} />
       </div>

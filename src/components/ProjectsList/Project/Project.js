@@ -38,9 +38,9 @@ class Project extends Component {
     return (
       <section
         className="row align-items-center no-gutters"
-        data-aos="fade-down"
+        data-aos="fade-down" 
       >
-        <div className={this.checkClassParityDiv1()}>
+        <div  className={this.checkClassParityDiv1()}>
           <div className="text-center">
             <div className="mb-5">
               <h3 className="h2  mb-4">{title}</h3>

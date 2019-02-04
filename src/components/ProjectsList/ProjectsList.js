@@ -10,7 +10,7 @@ class ProjectsList extends Component {
   render() {
     const { languageSelected } = this.props;
     return (
-      <section data-aos="fade-down">
+      <section   data-aos="fade-down">
         {getProjectsData().map((project, i) => {
           return (
             <Project
