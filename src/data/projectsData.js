@@ -22,7 +22,7 @@ const projectsData = [
     title: "FORM_TITLE",
     par: false,
     hrefGit: "https://github.com/20H-Talent/ikigai-project-3-annasauciuc",
-    hrefPreview: "http://form-project.amsauciuc.com ",
+    hrefPreview: "http://form-project.amsauciuc.com",
     src: `${form}`,
     alt: "form project"
   },
