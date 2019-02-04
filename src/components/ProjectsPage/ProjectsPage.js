@@ -19,9 +19,7 @@ class ProjectsPage extends Component {
             classStyles="h1 green projectsTitle ml-5 mt-5"
             data-aos="fade-down"
           />
-
           <hr className="underlined ml-5" />
-
           <ProjectsList languageSelected={languageSelected} />
         </div>
         <SkillsList languageSelected={languageSelected} />

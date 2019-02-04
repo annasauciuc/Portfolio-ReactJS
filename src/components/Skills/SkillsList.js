@@ -35,7 +35,6 @@ class SkillsList extends Component {
               <Bubble styleClass="devicon-trello-plain colored" />
               <Bubble styleClass="devicon-devicon-plain colored" />
               <Bubble styleClass="devicon-bootstrap-plain-wordmark colored" />
-              
               <Bubble styleClass="fab fa-slack" />
             </div>
           </div>

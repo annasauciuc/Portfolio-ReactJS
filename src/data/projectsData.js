@@ -8,7 +8,6 @@ import howIAm from "./../components/ProjectsList/Project/projectsImages/firstPro
 const projectsData = [
   {
     id: 1,
-
     text: "NETFLIX_TEXT",
     title: "NETFLIX_TITLE",
     par: true,
@@ -19,7 +18,6 @@ const projectsData = [
   },
   {
     id: 2,
-
     text: "FORM_TEXT",
     title: "FORM_TITLE",
     par: false,
@@ -30,7 +28,6 @@ const projectsData = [
   },
   {
     id: 3,
-
     text: "SASS_TEXT",
     title: "SASS_TITLE",
     par: true,
@@ -41,7 +38,6 @@ const projectsData = [
   },
   {
     id: 4,
-
     text: "ADMINISTRATION_TEXT",
     title: "ADMINISTRATION_TITLE",
     par: false,
@@ -52,7 +48,6 @@ const projectsData = [
   },
   {
     id: 5,
-
     text: "FLOATS_TITLE",
     title: "HIREPASSIONATE",
     par: true,
@@ -63,7 +58,6 @@ const projectsData = [
   },
   {
     id: 6,
-
     text: "HOW_I_AM_TEXT",
     title: "HOW_I_AM_TITLE",
     par: false,

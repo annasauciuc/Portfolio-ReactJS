@@ -4,17 +4,14 @@ import Project from "./Project/Project";
 import "./Project/Project.css";
 import { getProjectsData } from "./../../services/projects";
 import { getText } from "./../../services/translation";
-import images from './Project/images'
+
 
 class ProjectsList extends Component {
-
   render() {
     const { languageSelected } = this.props;
     return (
       <section data-aos="fade-down">
-     
         {getProjectsData().map((project, i) => {
-    
           return (
             <Project
               key={i}
@@ -30,7 +27,6 @@ class ProjectsList extends Component {
             />
           );
         })}
-    
       </section>
     );
   }

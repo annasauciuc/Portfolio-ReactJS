@@ -5,6 +5,11 @@ import "./Contact.css";
 import ContactForm from "./ContactForm";
 const Contact = props => {
   const { languageSelected } = props;
+  const urlTwitter = "https://twitter.com/@amsauciuc";
+  const urlLinkedin =
+    "https://www.linkedin.com/in/ana-maria-sauciuc-753ba8155/";
+  const urlGit = "https://github.com/annasauciuc";
+  const urlGmail = "mailto:hi@amsauciuc.com";
   return (
     <section
       className="contactSection text-center p-2"
@@ -24,7 +29,7 @@ const Contact = props => {
           {getText("CONTACT_TEXT", languageSelected)}{" "}
         </span>
         <a
-          href="mailto:hi@amsauciuc.com"
+          href={urlGmail}
           target="_blank"
           rel="noopener noreferrer"
           className="text-white h4 hoverLine"
@@ -33,27 +38,15 @@ const Contact = props => {
         </a>
       </div>
       <div className="text-white h1">||</div>
-      <ContactForm/>
+      <ContactForm />
       <div className="mb-2 mt-4 col-lg-12">
-        <a
-          href="https://twitter.com/@amsauciuc"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href={urlTwitter} target="_blank" rel="noopener noreferrer">
           <i className="fab social fa-2x icon-twitter fa-twitter" />
         </a>
-        <a
-          href="https://www.linkedin.com/in/ana-maria-sauciuc-753ba8155/"
-          target="_blank "
-          rel="noopener noreferrer"
-        >
+        <a href={urlLinkedin} target="_blank " rel="noopener noreferrer">
           <i className="fab social fa-2x icon-linkedin fa-linkedin-in " />
         </a>
-        <a
-          href="https://github.com/annasauciuc"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href={urlGit} target="_blank" rel="noopener noreferrer">
           <i className="fab icon-github fa-2x social fa-github" />
         </a>
       </div>
