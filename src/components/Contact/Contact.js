@@ -3,6 +3,7 @@ import { getText } from "./../../services/translation";
 import SectionTitle from "./../SectionTitle/SectionTitle";
 import "./Contact.css";
 import ContactForm from "./ContactForm";
+import ExternalLink from './../Links/ExternalLink'
 const Contact = props => {
   const { languageSelected } = props;
   const urlTwitter = "https://twitter.com/@amsauciuc";
@@ -28,27 +29,22 @@ const Contact = props => {
         <span className="h4 text-center font mb-5 text-light" id="contactText">
           {getText("CONTACT_TEXT", languageSelected)}{" "}
         </span>
-        <a
-          href={urlGmail}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-white h4 hoverLine"
-        >
+        <ExternalLink href={urlGmail} className="text-white h4 hoverLine">
           <u> hi@amsauciuc.com</u>
-        </a>
+        </ExternalLink>
       </div>
       <div className="text-white h1">||</div>
       <ContactForm />
       <div className="mb-2 mt-4 col-lg-12">
-        <a href={urlTwitter} target="_blank" rel="noopener noreferrer">
+        <ExternalLink href={urlTwitter} title="Twitter">
           <i className="fab social fa-2x icon-twitter fa-twitter" />
-        </a>
-        <a href={urlLinkedin} target="_blank " rel="noopener noreferrer">
+        </ExternalLink>
+        <ExternalLink href={urlLinkedin} title="Linkedin">
           <i className="fab social fa-2x icon-linkedin fa-linkedin-in " />
-        </a>
-        <a href={urlGit} target="_blank" rel="noopener noreferrer">
+        </ExternalLink>
+        <ExternalLink href={urlGit} title="Github">
           <i className="fab icon-github fa-2x social fa-github" />
-        </a>
+        </ExternalLink>
       </div>
     </section>
   );
