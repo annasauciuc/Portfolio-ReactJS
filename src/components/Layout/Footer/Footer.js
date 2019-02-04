@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { getText } from "./../../../services/translation";
 import Quote from "./../../Quote/Quote";
 import "./Footer.css";
+import FloatingButton from "../../FloatingButton/FloatingButton";
 class Footer extends Component {
 
   render() {
@@ -13,16 +14,8 @@ class Footer extends Component {
             <Quote text={getText("FOOTER_TEXT", languageSelected)} />
           </div>
           <div className="col-md-7 col">
-            <a href="#typed">
-              {" "}
-              <button
-                id="floating-action-button"
-                className="btn position-fixed shadow"
-              >
-                <i className="m-auto fas text-white fa-arrow-up btn-md btnFloat rounded-circle" />
-              </button>{" "}
-            </a>
-            <p className=" ">&copy; 2018 Sauciuc Ana Maria</p>
+           <FloatingButton/>
+            <p>&copy; 2018 Sauciuc Ana Maria</p>
           </div>
         </div>
       </footer>

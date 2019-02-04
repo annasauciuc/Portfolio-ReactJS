@@ -25,7 +25,7 @@ export const spanishTranslation={
     "SKILLS": "Mis habilidades ",
     "HOBBIESTITLE": "Hobbies y Intereses",
     "CODEQUOTE": " “ Programar no es algo que haces de 9 a 17. No es un trabajo, es una forma de vida.”",
-    "AUTHOR": "<u>Un tio inteligente</u>",
+    "AUTHOR": "Un tio inteligente",
     "HIRETITLE": "¿Porque tenerme  en tu equipo?",
     "HIREWORKER": "Gran trabajadora",
     "HIREWORKERP": "La capacidad de colaborar con clientes y compañeros es crucial para el desarrollo web. Respetando las demás ideas y el espacio también. Nada es más gratificante cuando el trabajo duro vale la pena. Siempre trato de aprender cosas nuevas o reforzar lo que ya sé.",
