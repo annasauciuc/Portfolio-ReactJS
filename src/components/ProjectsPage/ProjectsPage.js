@@ -11,19 +11,24 @@ class ProjectsPage extends Component {
   render() {
     const { languageSelected } = this.props;
     return (
-      <section id="main" className="mt-5 " data-aos="fade-down">
-        <div className="mb-5 pb-5 ">
-          <SectionTitle
-            text={getText("PROJECTS", languageSelected)}
-            title="h2"
-            classStyles="h1 green projectsTitle ml-5 mt-5"
-            data-aos="fade-down"
-          />
-          <hr className="underlined ml-5" />
-          <ProjectsList languageSelected={languageSelected} />
+      <React.Fragment>
+        <div className="container">
+          <section id="main" className="mt-5 " data-aos="fade-down">
+            <div className="mb-5 pb-5 ">
+              <SectionTitle
+                text={getText("PROJECTS", languageSelected)}
+                title="h2"
+                classStyles="h1 green projectsTitle ml-5 mt-5"
+                data-aos="fade-down"
+              />
+              <hr className="underlined ml-5" />
+              <ProjectsList languageSelected={languageSelected} />
+            </div>
+          </section>
         </div>
         <SkillsList languageSelected={languageSelected} />
-      </section>
+
+      </React.Fragment>
     );
   }
 }

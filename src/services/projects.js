@@ -1,9 +1,7 @@
 import projectsData from "../data/projectsData";
 
-function getProjectsData(){
-return projectsData;
+function getProjectsData() {
+  return projectsData;
 }
 
-export {
-    getProjectsData
-}
+export { getProjectsData };

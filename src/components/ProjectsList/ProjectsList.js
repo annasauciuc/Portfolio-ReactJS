@@ -21,7 +21,7 @@ class ProjectsList extends Component {
               title={getText(project.title, languageSelected)}
               par={project.par}
               hrefGit={project.hrefGit}
-              hrePreview={project.hrefPreview}
+              hrefPreview={project.hrefPreview}
               src={project.src}
               alt={project.alt}
             />

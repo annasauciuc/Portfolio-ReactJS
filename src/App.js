@@ -43,7 +43,7 @@ class App extends Component {
   render() {
     const { languageSelected } = this.state;
     return (
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <ScrollArea>
           <Layout
             onChangeLanguage={this.onChangeLanguage}
@@ -55,7 +55,6 @@ class App extends Component {
                 path="/"
                 render={() => <HomePage languageSelected={languageSelected} />}
               />
-
               <Route
                 exact
                 path="/projects"

@@ -5,7 +5,7 @@
     title: 'HIRETEAMWORK'
 },{
     id: 2,
-    className: 'fas fa-clock',
+    className: 'far fa-clock',
     text: 'HIREINTIMEP',
     title: 'HIREINTIME'
 },{
@@ -20,12 +20,12 @@
     title: 'HIRELEARNER'
 },{
     id: 5,
-    className: 'fas fa-fist-raised',
+    className: 'fa fa-code',
     text: 'HIREWORKERP',
     title: 'HIREWORKER'
 },{
     id: 6,
-    className: 'fas fa-heart',
+    className: 'far fa-heart',
     text: 'HIREPASSIONATEP',
     title: 'HIREPASSIONATE'
 }

@@ -17,7 +17,7 @@ class Footer extends Component {
           </div>
           <div className="col-md-7 col">
             <FloatingButton  />
-            <p>&copy; 2018 Sauciuc Ana Maria</p>
+            <p>&copy; {new Date().getFullYear()} Sauciuc Ana Maria</p>
           </div>
         </div>
       </footer>

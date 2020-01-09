@@ -33,7 +33,7 @@ class Navigation extends Component {
 
     return (
       <div>
-        <nav className="navbar fixed-top  navbar-expand-lg navbar-dark">
+        <nav className="navbar py-0 fixed-top  navbar-expand-lg navbar-dark">
           {" "}
           <a className="text-light mr-auto" href="/">
             <img src={favicon} style={{ width: "80px" }} alt="favicon am" />

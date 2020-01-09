@@ -19,6 +19,8 @@ class HobbieList extends Component {
         <div className="container">
           <div className="col-lg-12  col-xl-12  col-md-12 col-xs-12">
             <div className="text-center mt-5 bubbles" id="hobbies">
+            <Bubble text="Code" styleClass="fas fa-code" />
+            <Bubble text="Code" styleClass="fa fa-laptop" />
               <Bubble text="Sport" styleClass="fas fa-running" />
               <Bubble text="Music" styleClass="fa fa-headphones" />
               <Bubble text="Travel" styleClass="fas fa-plane-departure" />
@@ -30,12 +32,7 @@ class HobbieList extends Component {
               <Bubble text="Family" styleClass="fas fa-home" />
               <Bubble text="Read" styleClass="fas fa-book-reader" />
               <Bubble text="Animals" styleClass="fas fa-paw" />
-              <Bubble text="Theater" styleClass="fas fa-theater-masks" />
-              <Bubble text="Dance" styleClass="fas fa-heart" />
-              <Bubble text="Code" styleClass="fas fa-code" />
-              <Bubble text="Eat" styleClass="fas fa-utensils" />
               <Bubble text="Not Sleep" styleClass="fas fa-heart" />
-              <Bubble text="Love" styleClass="fas fa-heart" />
             </div>
           </div>
         </div>

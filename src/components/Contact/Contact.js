@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { getText } from "./../../services/translation";
 import SectionTitle from "./../SectionTitle/SectionTitle";
 import "./Contact.css";
@@ -20,7 +20,7 @@ const Contact = props => {
       <SectionTitle
         text={getText("CONTACT_TITLE", languageSelected)}
         title="h2"
-        styleClass="text-center font mb-5 text-light"
+        styleClass="text-center font mb-5 text-white"
       />
       <div
         className="col-lg-12 d-inline-block text-center text-white mb-4"
@@ -33,8 +33,6 @@ const Contact = props => {
           <u> hi@amsauciuc.com</u>
         </ExternalLink>
       </div>
-      <div className="text-white h1">||</div>
-      <ContactForm />
       <div className="mb-2 mt-4 col-lg-12">
         <ExternalLink href={urlTwitter} title="Twitter">
           <i className="fab social fa-2x icon-twitter fa-twitter" />

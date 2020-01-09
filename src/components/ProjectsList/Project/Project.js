@@ -31,9 +31,9 @@ class Project extends Component {
       hrefGit,
       hrefPreview,
       src,
-      alt,
-      ...other
+      alt
     } = this.props;
+ 
 
     return (
       <section
@@ -47,7 +47,7 @@ class Project extends Component {
               <p>{text}</p>
             </div>
             <ExternalLink
-              className="btn btn-outline greenFav g-font-weight-600 rounded p-1"
+              className="btn btn-outline greenFav g-font-weight-600 mr-1 rounded p-1"
               href={hrefGit}>
               See github
               <i className="fab ml-1  fa-github " />

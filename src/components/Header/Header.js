@@ -12,7 +12,7 @@ const Header = props => {
           <span className="text-light" id="typed" />
           <Typeed />
           <p
-            className="h1 text-light d-none d-sm-block d-lg-block d-xl-block"
+            className="h1 text-light "
             id="presentationText"
           >
             {" "}

@@ -6,9 +6,8 @@ class Typeed extends Component {
   render() {
     return (
       <Typed
-        strings={[
-          "<span class='text-white'>Hi !</span> ",
-          "<span class='text-white'>Hi ! <br>I'm</span> <strong>Ana Maria</strong> "
+        strings={[ 
+          "<h1 class='text-white'> Hi ! <br>I'm Ana Maria</h1>"
         ]}
         typeSpeed={40}
         backDelay={900}

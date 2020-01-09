@@ -5,9 +5,9 @@
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    color: rgb(41, 39, 39);
+    color: rgb(255, 255, 255);
     overflow: hidden;
-    height: 640px;
+    /* height: 640px; */
     width: 100%;
     /* background-color: rgba(0, 0, 0, 0.51); */
 }
@@ -17,9 +17,10 @@
 }
 
 .social {
+    margin-right: 5px;
     width: 3.2rem;
     height: 3.2rem;
-    border: 0.1rem solid #ffffff;
+  background-color: #ffffff;
     border-radius: 100%;
     font-size: 1.4rem;
     line-height: 3.2rem;
